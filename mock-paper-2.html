@@ -183,7 +183,7 @@ select.fbin,input.fbin{width:auto}
 </ol>
 <details class='reveal'><summary>Show Q4 memo (click to reveal)</summary><div class='memo-banner'>Q4 MEMO - 20 marks</div><ol><li>1. courage - it names a quality/feeling. (2)</li><li>2. our. (2)</li><li>3. the. (2)</li><li>4. worse. (2)</li><li>5. unfair (un- + fair). (2)</li><li>6. brave = courageous / bold (1); victory opposite = defeat (1).</li><li>7. Where is my baton? (2) - capital letter and question mark.</li><li>8. The team ran fast. (2)</li><li>9. Naledi said that she was sorry. (2)</li><li>10. The team was praised by the coach. (2)</li></ol></details>
 </section>
-<div class='card objectives'><h3>After marking</h3><ul><li>Write every mistake in the error log (Print Pack).</li><li>Open the module deck for each weak question type and redo its practice quiz.</li><li>Retake this mock from the start in 3 days - aim for +10 marks.</li></ul><p><label>Save your mark to the tracker: <input id='mockScore' class='fbin' type='number' min='0' max='60' placeholder='e.g. 41'> / 60 <button type='button' class='rbtn' onclick='logMockScore()'>Save mark</button></label></p><p class='hint'>The mark appears on the <a href='tracker.html'>Progress Tracker</a> with the rest of the practice history.</p></div>
+<div class='card objectives'><h3>After marking</h3><ul><li>Write every mistake in the error log (Print Pack).</li><li>Open the module deck for each weak question type and redo its practice quiz.</li><li>Retake this mock from the start in 3 days - aim for +10 marks.</li></ul></div>
 <div class='nav'><a href='index.html' class='hub'>&larr; Back to the Hub</a><a href='trainer.html'>Trainer &rarr;</a></div>
 </main>
 <footer>Grade 7 English HL - Exam Prep Pack &middot; Aligned to the DBE CAPS ATP (2023/24, retained for 2025/26) &middot; Works offline</footer>
@@ -546,15 +546,5 @@ var Track=(function(){
     TOPICS:TOPICS
   };
 })();
-</script>
-<script>
-function logMockScore(){
-  var i=document.getElementById('mockScore');
-  var v=parseInt(i.value,10);
-  if(isNaN(v)||v<0||v>60){alert('Enter a mark from 0 to 60.');return;}
-  if(window.Track){Track.logMock(v);}
-  i.value='';
-  alert('Saved to the progress tracker: '+v+' / 60.');
-}
 </script>
 </body></html>
