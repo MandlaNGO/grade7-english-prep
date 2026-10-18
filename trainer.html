@@ -90,6 +90,25 @@ footer::before{content:'';display:block;width:64px;height:4px;background:var(--g
 .fbin{width:180px;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;font-size:15px;font-family:inherit}
 .fbok{background:#EAF5E3;border-color:var(--green)}
 .fbno{background:#FCEAE8;border-color:var(--red)}
+/* tracker */
+.ovgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.ovcard{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:center}
+.ovcard b{display:block;font-size:1.55em;color:var(--wine3);font-family:var(--display)}
+.ovcard small{color:var(--muted)}
+.bar{background:#EFE3CE;border-radius:6px;height:10px;overflow:hidden;min-width:90px;max-width:220px}
+.bar i{display:block;height:100%}
+.bar i.g{background:var(--green)}
+.bar i.a{background:var(--gold)}
+.bar i.r{background:var(--red)}
+.pillstat{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.pillstat.g{background:#EAF5E3;color:#3F6A17}
+.pillstat.a{background:#FDF6E7;color:#8A6114}
+.pillstat.r{background:#FCEAE8;color:#A32B23}
+.pillstat.m{background:#EFE9DF;color:#7A6A58}
+.rbtn.danger{background:#B3261E}
+.rbtn.danger:hover{background:#8C1D18;color:#fff}
+textarea.code{width:100%;min-height:70px;font-family:Consolas,monospace;font-size:12.5px;border:1.5px solid var(--line);border-radius:10px;padding:8px;box-sizing:border-box}
+select.fbin,input.fbin{width:auto}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
 /* trainer */
 .tabbtns{display:flex;gap:8px;margin:18px 0}
@@ -140,7 +159,7 @@ footer::before{content:'';display:block;width:64px;height:4px;background:var(--g
 <div class='card scenario'><h3>Sit the full mock Paper 2</h3><p>60 marks - about 90 minutes - no notes, no phone. Then mark yourself honestly with the memo and write every mistake in the error log (in the <a href='print-pack.html'>Print Pack</a>).</p><p><a class='rbtn' style='display:inline-block;text-decoration:none;color:#fff' href='mock-paper-2.html'>Open the mock paper</a></p></div>
 <div class='card objectives'><h3>How to mark yourself</h3><ul><li>1 mark = 1 point. If you gave one point for 2 marks, you lose a mark.</li><li>Quotes must be exact words from the passage.</li><li>Summaries: count the words and check 'own words'.</li><li>Language: mark each item strictly against the memo - half-right is wrong.</li></ul></div>
 </div>
-<div class='nav'><a href='index.html' class='hub'>&larr; Back to the Hub</a><a href='mock-paper-2.html'>Mock Paper 2 &rarr;</a></div>
+<div class='nav'><a href='index.html' class='hub'>&larr; Back to the Hub</a><a href='tracker.html'>Progress tracker</a><a href='mock-paper-2.html'>Mock Paper 2 &rarr;</a></div>
 </main>
 <footer>Grade 7 English HL - Exam Prep Pack &middot; Aligned to the DBE CAPS ATP (2023/24, retained for 2025/26) &middot; Works offline</footer>
 <script>var BANK={"Comprehension": [{"q": "What is the best first step when you get a passage and questions?", "opts": ["Read the passage twice slowly", "Read the questions first", "Write the summary", "Count the marks"], "a": 1, "why": "Reading the questions first tells you what to look for."}, {"q": "Skimming means ...", "opts": ["reading every word carefully", "reading quickly for the main idea", "finding one detail", "reading backwards"], "a": 1, "why": "Skim = main idea; scan = one specific detail."}, {"q": "Scanning means ...", "opts": ["reading for pleasure", "hunting for one specific detail", "summarising", "reading aloud"], "a": 1, "why": "You scan for a date, name or number."}, {"q": "Where do you usually find the main idea of a paragraph?", "opts": ["In the topic sentence", "In the longest word", "In the title", "In the last word"], "a": 0, "why": "The topic sentence (often first or last) carries the main idea."}, {"q": "A literal question asks for ...", "opts": ["your opinion", "information stated directly in the text", "a guess", "a definition you must invent"], "a": 1, "why": "Literal answers are right there in the text."}, {"q": "'Why did Lerato help the boy?' is mostly a ... question.", "opts": ["literal", "inferential", "spelling", "vocabulary"], "a": 1, "why": "You must read between the lines to explain why."}, {"q": "'Was the coach right to be proud? Discuss.' is a ... question.", "opts": ["literal", "inferential", "evaluative", "punctuation"], "a": 2, "why": "Evaluative: judge and give reasons."}, {"q": "'The stadium was full.' Is this a fact or an opinion?", "opts": ["Fact - it can be checked", "Opinion - it is a feeling", "Opinion - it uses adjectives", "Neither"], "a": 0, "why": "It can be observed and checked."}, {"q": "'That was the best match ever.' Is this a fact or an opinion?", "opts": ["Fact", "Opinion - it is a judgement", "Fact - everyone agrees", "Neither"], "a": 1, "why": "'Best' is a judgement that cannot be proved."}, {"q": "A 3-mark question usually needs ...", "opts": ["one word", "three points, or a point with evidence and explanation", "a full page", "your name"], "a": 1, "why": "Marks follow points."}, {"q": "You meet a word you do not know. What helps most?", "opts": ["Skip the question", "Use context clues - the words around it", "Ask the invigilator", "Guess a random meaning"], "a": 1, "why": "Context clues show the meaning."}, {"q": "Comprehension answers should be written ...", "opts": ["in full sentences, matching the question", "in single words", "in your own language", "as drawings"], "a": 0, "why": "Full sentences show complete understanding."}], "Literature": [{"q": "The sequence of events in a story is the ...", "opts": ["setting", "plot", "theme", "mood"], "a": 1, "why": "Plot = events in order, building to a climax."}, {"q": "The time and place of a story is the ...", "opts": ["plot", "setting", "conflict", "narrator"], "a": 1, "why": "Setting = where and when."}, {"q": "The main character who faces the problem is the ...", "opts": ["antagonist", "narrator", "protagonist", "extra"], "a": 2, "why": "Protagonist = main character."}, {"q": "The character who opposes the main character is the ...", "opts": ["protagonist", "antagonist", "narrator", "hero"], "a": 1, "why": "Antagonist = against the protagonist."}, {"q": "'A survivor fights a raging storm.' This conflict is ...", "opts": ["man vs man", "man vs nature", "man vs self", "man vs society"], "a": 1, "why": "Person against a force of nature."}, {"q": "Using 'I' and 'we' in a story shows ... narration.", "opts": ["first-person", "second-person", "third-person", "no"], "a": 0, "why": "First-person narrators are inside the story."}, {"q": "Using 'he', 'she' and 'they' shows ... narration.", "opts": ["first-person", "second-person", "third-person", "personal"], "a": 2, "why": "Third-person narrators stand outside the story."}, {"q": "The most exciting turning point in a story is the ...", "opts": ["ending", "climax", "setting", "opening"], "a": 1, "why": "The climax is where tension peaks."}, {"q": "The big idea or message about life is the ...", "opts": ["plot", "theme", "mood", "setting"], "a": 1, "why": "Theme = big idea like courage or friendship."}, {"q": "The feeling the story creates in the reader is the ...", "opts": ["tone", "mood", "theme", "plot"], "a": 1, "why": "Mood is the reader's feeling."}, {"q": "How a writer builds a character (words, actions, thoughts) is called ...", "opts": ["characterisation", "setting", "plot", "narration"], "a": 0, "why": "Characterisation = how characters are created."}, {"q": "The part of the story where the conflict is solved is the ...", "opts": ["climax", "resolution", "introduction", "setting"], "a": 1, "why": "Resolution = the ending where the problem is settled."}], "Figures of Speech": [{"q": "A simile compares using ...", "opts": ["like or as", "is / are", "rhyme", "sound words"], "a": 0, "why": "as brave as a lion / brave like a lion."}, {"q": "'The classroom was a zoo.' This is a ...", "opts": ["simile", "metaphor", "idiom", "hyperbole"], "a": 1, "why": "A metaphor says one thing IS another."}, {"q": "'The old gate groaned in the wind.' This is ...", "opts": ["personification", "simile", "metaphor", "alliteration"], "a": 0, "why": "A gate cannot really groan - human action given to an object."}, {"q": "'Peter picked purple plums.' This is ...", "opts": ["alliteration", "assonance", "onomatopoeia", "oxymoron"], "a": 0, "why": "Repeated beginning sounds: p...p...p."}, {"q": "'Crash! Bang! Sizzle!' These are ...", "opts": ["nouns", "onomatopoeia", "idioms", "similes"], "a": 1, "why": "Words that imitate sounds."}, {"q": "'I have a million things to do.' This is ...", "opts": ["idiom", "hyperbole", "personification", "simile"], "a": 1, "why": "Hyperbole = exaggeration for effect."}, {"q": "'Break a leg!' This is an ...", "opts": ["simile", "idiom", "oxymoron", "hyperbole"], "a": 1, "why": "An idiom's meaning differs from the words themselves."}, {"q": "'Bittersweet' is an example of ...", "opts": ["an oxymoron", "alliteration", "onomatopoeia", "a simile"], "a": 0, "why": "Two opposites joined together."}, {"q": "Imagery is language that ...", "opts": ["appeals to the senses", "rhymes", "repeats vowels", "exaggerates"], "a": 0, "why": "Imagery paints pictures you can see, hear, feel, smell or taste."}, {"q": "Assonance is the repetition of ...", "opts": ["beginning sounds", "vowel sounds", "whole words", "end sounds"], "a": 1, "why": "Assonance = repeated vowel sounds (slow golden glow)."}, {"q": "'The stars winked at us.' This is ...", "opts": ["personification", "simile", "metaphor", "idiom"], "a": 0, "why": "Stars cannot wink - human action."}, {"q": "'Her smile was sunshine.' This is a ...", "opts": ["simile", "metaphor", "hyperbole", "idiom"], "a": 1, "why": "One thing is called another without like/as."}], "Nouns, Pronouns & Articles": [{"q": "Which word is a common noun?", "opts": ["city", "Cape Town", "Friday", "Sam"], "a": 0, "why": "Common nouns name general things."}, {"q": "Which word is a proper noun?", "opts": ["city", "Durban", "team", "honesty"], "a": 1, "why": "Proper nouns name specific places - always capitalised."}, {"q": "'Bravery' is an ... noun.", "opts": ["common", "abstract", "collective", "proper"], "a": 1, "why": "Abstract nouns name feelings and qualities."}, {"q": "'Flock' (of birds) is a ... noun.", "opts": ["collective", "abstract", "proper", "concrete"], "a": 0, "why": "Collective nouns name groups."}, {"q": "'Table' is a ... noun.", "opts": ["concrete", "abstract", "proper", "collective"], "a": 0, "why": "Concrete nouns name things you can touch."}, {"q": "The plural of 'box' is ...", "opts": ["boxs", "boxes", "boxen", "boxies"], "a": 1, "why": "-x adds -es: box - boxes."}, {"q": "The plural of 'baby' is ...", "opts": ["babys", "babyes", "babies", "babes"], "a": 2, "why": "Consonant + y changes to -ies."}, {"q": "Which is a personal pronoun?", "opts": ["they", "the", "quickly", "sang"], "a": 0, "why": "Personal pronouns: I, you, he, she, it, we, they, me, him, her, us, them."}, {"q": "'That book is MINE.' The pronoun 'mine' is ...", "opts": ["possessive", "reflexive", "interrogative", "demonstrative"], "a": 0, "why": "Possessive pronouns show ownership: mine, yours, ours."}, {"q": "'She taught HERSELF.' The pronoun is ...", "opts": ["possessive", "reflexive", "relative", "personal"], "a": 1, "why": "Reflexive pronouns end in -self/-selves."}, {"q": "___ is the definite article.", "opts": ["A", "An", "The", "Its"], "a": 2, "why": "'The' points to a specific thing."}, {"q": "Fill the blank: 'It took ___ hour to finish.'", "opts": ["a", "an", "the", "no article"], "a": 1, "why": "'an' before a vowel SOUND - hour starts with a vowel sound."}], "Adjectives & Word Meaning": [{"q": "An adjective describes a ...", "opts": ["verb", "noun", "preposition", "sentence"], "a": 1, "why": "Adjectives describe nouns: a brave girl."}, {"q": "The comparative of 'fast' is ...", "opts": ["fastest", "faster", "more fast", "fastly"], "a": 1, "why": "Short adjectives add -er."}, {"q": "The superlative of 'big' is ...", "opts": ["bigger", "biggest", "most big", "bigly"], "a": 1, "why": "Short adjectives add -est."}, {"q": "The comparative of 'beautiful' is ...", "opts": ["beautifuler", "more beautiful", "most beautiful", "beautifullest"], "a": 1, "why": "Long adjectives use more/most."}, {"q": "good - better - ...", "opts": ["goodest", "best", "most good", "weller"], "a": 1, "why": "Irregular: good - better - best."}, {"q": "A synonym for 'quick' is ...", "opts": ["slow", "swift", "lazy", "late"], "a": 1, "why": "Synonyms have similar meanings."}, {"q": "An antonym for 'victory' is ...", "opts": ["win", "defeat", "trophy", "race"], "a": 1, "why": "Antonyms are opposites."}, {"q": "The prefix 'un-' in 'unfair' means ...", "opts": ["again", "not", "before", "very"], "a": 1, "why": "un-, im-, dis- can mean 'not'."}, {"q": "The suffix '-less' in 'careless' means ...", "opts": ["full of", "without", "again", "little"], "a": 1, "why": "careless = without care."}, {"q": "The root of 'unhelpfully' is ...", "opts": ["un", "help", "fully", "ful"], "a": 1, "why": "Root = the base word."}, {"q": "Which pair are homophones?", "opts": ["sea / see", "big / large", "hot / cold", "run / sprint"], "a": 0, "why": "Homophones sound the same but are spelled differently."}, {"q": "'Their / there / they're' are often confused because they are ...", "opts": ["synonyms", "homophones", "antonyms", "idioms"], "a": 1, "why": "They sound similar but mean different things."}], "Sentences, Punctuation & Verbs": [{"q": "A simple sentence has ...", "opts": ["one main clause", "two main clauses", "no verb", "two subjects"], "a": 0, "why": "One main clause: The dog barked."}, {"q": "A compound sentence joins two main clauses with ...", "opts": ["and, but, or", "when, although", "because, if", "or else never"], "a": 0, "why": "Compound: two main clauses joined by and/but/or."}, {"q": "A complex sentence has ...", "opts": ["only a main clause", "a main clause + a subordinate clause", "no punctuation", "two subjects and no verb"], "a": 1, "why": "Complex: When the bell rang, we left."}, {"q": "The subject of 'The young girl sang sweetly' is ...", "opts": ["sang", "sweetly", "the young girl", "young"], "a": 2, "why": "The subject does the action."}, {"q": "A statement ends with a ...", "opts": ["question mark", "full stop", "comma", "colon"], "a": 1, "why": "Statements end with full stops."}, {"q": "A question ends with a ...", "opts": ["full stop", "question mark", "exclamation mark", "dash"], "a": 1, "why": "Questions need question marks."}, {"q": "The apostrophe in 'Naledi's baton' shows ...", "opts": ["a missing letter", "possession", "a plural", "emphasis"], "a": 1, "why": "The baton belongs to Naledi."}, {"q": "The past tense of 'eat' is ...", "opts": ["eated", "ate", "eaten", "eating"], "a": 1, "why": "Irregular: eat - ate - eaten."}, {"q": "'will write' is the ... tense.", "opts": ["past", "present", "future", "perfect"], "a": 2, "why": "will + verb = future."}, {"q": "Which direct speech is punctuated correctly?", "opts": ["He said, 'I am tired.'", "He said 'I am tired'.", "He said, 'i am tired'.", "He said 'I am tired,'"], "a": 0, "why": "Comma before quotes, capital letter, full stop inside."}, {"q": "The passive voice of 'The chef cooked the meal' is ...", "opts": ["The meal was cooked by the chef.", "The chef was cooking.", "The meal cooked.", "The chef has cooked."], "a": 0, "why": "Passive: object becomes subject + was/were + past participle."}, {"q": "'Dogs barks' is wrong because ...", "opts": ["of spelling", "the subject and verb do not agree", "there is no full stop", "dogs is plural"], "a": 1, "why": "Subject-verb agreement: Dogs bark."}], "Poetry": [{"q": "One row of words in a poem is a ...", "opts": ["stanza", "line", "paragraph", "rhyme"], "a": 1, "why": "A line is one row; a stanza is a group of lines."}, {"q": "A group of lines in a poem is a ...", "opts": ["stanza", "line", "chapter", "sentence"], "a": 0, "why": "Stanza = group of lines."}, {"q": "A rhyme scheme of abab means ...", "opts": ["lines 1 & 3 rhyme and 2 & 4 rhyme", "every line rhymes", "no lines rhyme", "only the last line rhymes"], "a": 0, "why": "abab: 1st/3rd rhyme (a), 2nd/4th rhyme (b)."}, {"q": "The beat of a poem is its ...", "opts": ["rhyme", "rhythm", "theme", "mood"], "a": 1, "why": "Rhythm = the beat you feel reading aloud."}, {"q": "The feeling the poem creates in the reader is the ...", "opts": ["tone", "mood", "theme", "subject"], "a": 1, "why": "Mood = reader's feeling."}, {"q": "The poet's attitude towards the subject is the ...", "opts": ["mood", "tone", "image", "rhyme"], "a": 1, "why": "Tone = poet's attitude."}, {"q": "The big idea of a poem is its ...", "opts": ["theme", "rhyme", "typography", "line"], "a": 0, "why": "Theme = big idea like nature or courage."}, {"q": "In SIFT, the T stands for ...", "opts": ["Title", "Tone and Theme", "Time", "Typography"], "a": 1, "why": "SIFT: Subject, Imagery, Figurative language, Tone and Theme."}, {"q": "Annotating a poem means ...", "opts": ["copying it out", "writing notes on it - circling devices, underlining key words", "memorising it", "translating it"], "a": 1, "why": "Annotations help you answer with evidence."}, {"q": "When you quote from a poem, you should ...", "opts": ["make up the words", "use the exact words from the poem", "quote the whole poem", "avoid quoting"], "a": 1, "why": "Exact evidence earns the marks."}, {"q": "'The river learning to roar' suggests the rain is ...", "opts": ["gentle and quiet", "making the river strong and loud", "stopping soon", "falling in one place"], "a": 1, "why": "The river grows powerful as the rain continues."}, {"q": "How do you usually answer a poetry question about mood? (2 marks)", "opts": ["Name the mood only", "Name the mood + quote words that create it", "Copy the poem", "Say 'it is sad'"], "a": 1, "why": "Mood + supporting quotation = both marks."}], "Visual Texts": [{"q": "The purpose of an advertisement is to ...", "opts": ["tell a story", "persuade you to buy or do something", "report news", "test your reading"], "a": 1, "why": "Adverts persuade a target audience."}, {"q": "The purpose of a poster at a clinic is mostly to ...", "opts": ["sell products", "inform and remind the community", "entertain children", "report sport"], "a": 1, "why": "Clinic posters inform about health."}, {"q": "The target audience of a poster about school shoes is ...", "opts": ["babies", "learners and their parents", "pensioners", "tourists"], "a": 1, "why": "Target audience = who the text is made for."}, {"q": "A speech bubble in a cartoon shows ...", "opts": ["what the artist thinks", "what the character says", "the title", "the price"], "a": 1, "why": "Speech bubbles carry the character's words."}, {"q": "Red in an advert often signals ...", "opts": ["calm and peace", "danger, urgency or stop", "nature", "sadness"], "a": 1, "why": "Red = danger/urgency; green = nature; blue = calm/water."}, {"q": "'Every drop counts!' is an example of a ...", "opts": ["statistic", "slogan", "call to action", "definition"], "a": 1, "why": "A slogan is short and memorable."}, {"q": "'Buy now! Visit our store today!' is a ...", "opts": ["call to action", "witness", "statistic", "logo"], "a": 0, "why": "It tells the reader to act."}, {"q": "'9 out of 10 learners prefer it' uses ...", "opts": ["emotive words", "statistics", "repetition", "rhyme"], "a": 1, "why": "Statistics = numbers used to persuade."}, {"q": "A cartoonist's intention is what the artist wants to ...", "opts": ["decorate", "make you think or feel about something", "advertise", "hide"], "a": 1, "why": "Cartoons make a point through humour or criticism."}, {"q": "A line on a graph that goes up from left to right shows ...", "opts": ["decrease", "increase", "no change", "nothing"], "a": 1, "why": "Up = increase; down = decrease."}, {"q": "Before answering graph questions, read the ...", "opts": ["title and axis labels", "colours only", "last number only", "pen ink"], "a": 0, "why": "Title and labels tell you what is measured."}, {"q": "A character pointing at an overflowing bin may show ...", "opts": ["friendship", "criticism or concern", "happiness", "sleepiness"], "a": 1, "why": "Body language and gesture carry meaning."}], "Summary Writing": [{"q": "A summary is ...", "opts": ["the whole passage shortened sentence by sentence", "the main ideas in your own words, in order, within a word limit", "your opinion of the passage", "a list of every fact"], "a": 1, "why": "Main ideas + own words + order + limit."}, {"q": "Which belongs in a summary?", "opts": ["Examples and numbers", "The main ideas", "Dialogue", "Your opinion"], "a": 1, "why": "Keep main ideas; leave out examples, dialogue and opinion."}, {"q": "The first step of the summary method is ...", "opts": ["count words", "read the passage twice", "write the title", "underline examples"], "a": 1, "why": "Read twice: meaning, then structure."}, {"q": "The main idea of a paragraph is usually in the ...", "opts": ["topic sentence", "title", "longest word", "last word"], "a": 0, "why": "Topic sentences usually open or close a paragraph."}, {"q": "A summary must be written in ...", "opts": ["your own words", "the writer's exact words", "a friend's words", "one-word points"], "a": 0, "why": "Copying whole sentences loses marks."}, {"q": "A summary must be written as ...", "opts": ["a bullet list", "one flowing paragraph", "a mind map", "a table"], "a": 1, "why": "Exam summaries are one paragraph."}, {"q": "Connectives (firstly, then, as a result) help to ...", "opts": ["fill the word count", "join points into a flowing summary", "copy the passage", "make it longer"], "a": 1, "why": "They link ideas logically."}, {"q": "The word limit in the exam must be ...", "opts": ["ignored", "followed - it is marked", "doubled", "used as a minimum"], "a": 1, "why": "Going over loses a mark."}, {"q": "You are 5 words over the limit. Cut ...", "opts": ["main points", "adjectives, examples and repeats", "the connectives", "the first sentence"], "a": 1, "why": "Cut detail, never main points."}, {"q": "Your own opinion in a summary ...", "opts": ["adds marks", "is not allowed", "is required", "doubles the marks"], "a": 1, "why": "A summary reports, it does not judge."}, {"q": "Summary marks usually come from ...", "opts": ["content points + own words + word limit + paragraph flow", "spelling only", "handwriting", "length"], "a": 0, "why": "Points carry most of the marks."}, {"q": "Paraphrasing means ...", "opts": ["copying exactly", "saying the same idea in different words", "translating", "shortening titles"], "a": 1, "why": "Keep the meaning, change the words."}], "Essay Writing": [{"q": "A narrative essay ...", "opts": ["describes a place", "tells a story with events", "lists instructions", "reports news"], "a": 1, "why": "Narrative = story with characters and events."}, {"q": "A descriptive essay mainly ...", "opts": ["tells a story", "paints a picture using the senses", "argues a point", "gives steps"], "a": 1, "why": "Descriptive uses sensory language."}, {"q": "A reflective essay shares ...", "opts": ["only jokes", "an experience and what was learnt from it", "a recipe", "a news report"], "a": 1, "why": "Reflective = experience + lesson."}, {"q": "The first step of the writing process is ...", "opts": ["draft", "plan", "proofread", "publish"], "a": 1, "why": "Plan with the grid first."}, {"q": "Which is a hook? (a strong opening)", "opts": ["I am going to write about...", "Crash! The door flew open.", "In conclusion...", "My essay is about..."], "a": 1, "why": "Sound/action hooks pull the reader in."}, {"q": "In TEE, the letters stand for ...", "opts": ["Topic, Evidence, Explanation", "Time, Event, Ending", "Title, Essay, End", "Topic, Example, Essay"], "a": 0, "why": "Topic sentence, Evidence, Explanation."}, {"q": "'Her hands trembled as she opened the letter.' This ...", "opts": ["tells", "shows", "lists", "summarises"], "a": 1, "why": "It shows nervousness through action."}, {"q": "A strong conclusion often ...", "opts": ["introduces a new story", "shares the lesson or final feeling", "stops suddenly", "repeats the whole essay"], "a": 1, "why": "End with a message, echo or feeling."}, {"q": "A narrative essay is usually written in the ... tense.", "opts": ["past", "future", "present", "no"], "a": 0, "why": "Stories happened before now - past tense."}, {"q": "Sensory language uses the ...", "opts": ["five senses", "dictionary", "thesaurus only", "title"], "a": 0, "why": "Sight, sound, smell, taste, touch."}, {"q": "The topic sentence ...", "opts": ["ends the paragraph", "says what the paragraph is about", "is the title", "is optional"], "a": 1, "why": "It opens the paragraph with its main idea."}, {"q": "What should you do LAST?", "opts": ["Plan", "Draft", "Revise", "Proofread"], "a": 3, "why": "Proofread with fresh eyes for spelling and punctuation."}], "Transactional Writing": [{"q": "The greeting in a FORMAL letter is ...", "opts": ["Hi there", "Dear Sir/Madam or Dear Mr/Ms + surname", "Howzit", "Dear friend"], "a": 1, "why": "Formal letters use title + surname, or Sir/Madam."}, {"q": "'Yours faithfully' is used when ...", "opts": ["you know the person's name", "the letter starts with Dear Sir/Madam", "it is a diary", "writing to a friend"], "a": 1, "why": "No name = faithfully; named person = sincerely."}, {"q": "A diary entry uses ...", "opts": ["third person, formal tone", "first person, personal tone", "second person only", "imperative verbs"], "a": 1, "why": "Diary: 'Dear Diary... I felt...'"}, {"q": "A notice must include date, time, place, who it concerns and ...", "opts": ["a price list", "contact person + signature", "a rhyme", "a graph"], "a": 1, "why": "Readers must know who to contact."}, {"q": "Instructions use ... verbs.", "opts": ["imperative (mix, cut, pour)", "past tense", "future tense", "passive"], "a": 0, "why": "Imperatives tell the reader exactly what to do."}, {"q": "An advertisement should include a ...", "opts": ["call to action", "bibliography", "salutation", "signature"], "a": 0, "why": "Tell the reader to act: 'Join today!'"}, {"q": "An email must have a clear ...", "opts": ["Subject line", "rhyme", "moral", "climax"], "a": 0, "why": "Short, clear subject lines help the reader."}, {"q": "A book review should NOT ...", "opts": ["name the author", "spoil the ending", "give your opinion", "rate the book"], "a": 1, "why": "No spoilers - keep the ending secret."}, {"q": "Register means ...", "opts": ["handwriting", "the level of language: formal or informal", "paper size", "the title"], "a": 1, "why": "Match register to audience: formal for officials, informal for friends."}, {"q": "C.O.P.S. stands for Capitals, Order, Punctuation and ...", "opts": ["Stories", "Spelling", "Sentences", "Speech"], "a": 1, "why": "Capitals, Order, Punctuation, Spelling."}, {"q": "Minutes of a meeting record ...", "opts": ["jokes", "decisions and action points", "the weather", "every single word"], "a": 1, "why": "Minutes record decisions and who is responsible."}, {"q": "A formal letter must include your address, the date and ...", "opts": ["the recipient's address", "a smiley face", "a poem", "a rating"], "a": 0, "why": "Both addresses and the date set out a formal letter."}], "Exam Technique & Oral": [{"q": "Grade 7 English has how many exam papers?", "opts": ["1", "2", "3", "4"], "a": 2, "why": "Paper 1 Oral, Paper 2 Response to Texts, Paper 3 Writing."}, {"q": "Paper 2 Q2 (visual text) is worth ...", "opts": ["5 marks", "10 marks", "20 marks", "60 marks"], "a": 1, "why": "Q2 = 10 marks."}, {"q": "Paper 2 Q3 (summary) is worth ...", "opts": ["10 marks", "20 marks", "5 marks", "30 marks"], "a": 0, "why": "Q3 = 10 marks."}, {"q": "Paper 2 Q4 (language) is worth ...", "opts": ["10 marks", "20 marks", "30 marks", "40 marks"], "a": 1, "why": "Q4 = 20 marks."}, {"q": "The oral presentation (Paper 1) is worth ...", "opts": ["10 marks", "20 marks", "30 marks", "60 marks"], "a": 1, "why": "Paper 1 = 20 marks."}, {"q": "'Marks = points' means ...", "opts": ["write as little as possible", "give one point for each mark available", "marks are free", "copy the question"], "a": 1, "why": "2 marks = 2 points or a point + reason."}, {"q": "If you do not know an answer, you should ...", "opts": ["leave it blank", "attempt it - part marks are possible", "write a joke", "skip the whole section"], "a": 1, "why": "Never leave a blank."}, {"q": "Before writing any answers, you should ...", "opts": ["read the instructions and questions", "start with Q4", "sharpen 10 pencils", "write your name 5 times"], "a": 0, "why": "Read first, then plan your time."}, {"q": "Halfway through Paper 2, you should ...", "opts": ["stop writing", "check the clock and adjust your pace", "recount marks", "start again"], "a": 1, "why": "A clock check keeps all questions on time."}, {"q": "Strong oral delivery includes ...", "opts": ["reading with eyes down", "eye contact, clear voice and a steady pace", "rushing", "whispering"], "a": 1, "why": "Delivery is marked: eyes, voice, pace, posture."}, {"q": "How many times should you rehearse the oral?", "opts": ["Never - just speak", "At least three times, including to a person", "Once in your head", "Only in class"], "a": 1, "why": "Practise alone, to someone, and recorded/mirrored."}, {"q": "In C.O.P.S., the S reminds you to check ...", "opts": ["stories", "spelling (and your personal trouble words)", "statistics", "stars"], "a": 1, "why": "Capitals, Order, Punctuation, Spelling."}]};var CARDS=[["Simile", "A comparison using 'like' or 'as' - as brave as a lion."], ["Metaphor", "Says one thing IS another - the classroom was a zoo."], ["Personification", "Giving human qualities to an object - the wind whispered."], ["Alliteration", "Repeated beginning sounds - Peter picked purple plums."], ["Onomatopoeia", "Words that imitate sounds - buzz, crash, sizzle."], ["Hyperbole", "Exaggeration for effect - I've told you a million times."], ["Idiom", "A phrase whose meaning is not literal - break a leg."], ["Oxymoron", "Two opposite words together - bittersweet."], ["Plot", "The sequence of events in a story, building to a climax."], ["Setting", "The time and place where a story happens."], ["Protagonist", "The main character who faces the central problem."], ["Antagonist", "The character or force that opposes the protagonist."], ["Climax", "The most exciting turning point of the story."], ["Theme", "The big idea or message about life in a text."], ["Mood", "The feeling the text creates in the reader."], ["Tone", "The writer's attitude towards the subject."], ["Common noun", "A general name - city, book, team."], ["Proper noun", "A specific name, always capitalised - Durban, Friday."], ["Abstract noun", "Names a feeling or quality - freedom, honesty."], ["Collective noun", "Names a group - swarm, team, class."], ["Concrete noun", "Names something you can touch - table, door."], ["Personal pronoun", "Stands in for people - I, you, he, she, we, they, them."], ["Possessive pronoun", "Shows ownership - mine, yours, ours, theirs."], ["Reflexive pronoun", "Ends in -self/-selves - myself, herself, ourselves."], ["Definite article", "'the' - points to a specific thing."], ["Indefinite article", "'a' / 'an' - one of many; 'an' before a vowel sound."], ["Comparative adjective", "-er or more - faster, more beautiful."], ["Superlative adjective", "-est or most - fastest, most beautiful."], ["Synonym", "A word with a similar meaning - brave / courageous."], ["Antonym", "A word with the opposite meaning - victory / defeat."], ["Prefix", "A word part added in front - un-, im-, re-, dis-."], ["Suffix", "A word part added at the end - -ful, -less, -ly, -ness."], ["Simple sentence", "One main clause - The dog barked."], ["Compound sentence", "Two main clauses joined by and/but/or - I like tea, but she likes coffee."], ["Complex sentence", "Main clause + subordinate clause - When the bell rang, we left."], ["Direct speech", "The exact words in quotation marks - He said, 'I am tired.'"], ["Indirect (reported) speech", "He said that he was tired. Verbs move one tense back."], ["Active voice", "The subject does the action - The chef cooked the meal."], ["Passive voice", "The subject receives the action - The meal was cooked by the chef."], ["SIFT method", "Subject, Imagery, Figurative language, Tone & Theme - annotation steps."], ["Rhyme scheme", "The pattern of end rhymes, e.g. abab."], ["Stanza", "A group of lines in a poem - like a paragraph."], ["Target audience", "The group a text is made for."], ["Slogan", "A short, memorable phrase used in advertising."], ["Call to action", "An instruction telling the reader to act - Buy now!"], ["Summary", "Main ideas in your own words, in order, within the word limit."], ["Topic sentence", "The sentence that carries the main idea of a paragraph."], ["Hook", "A strong opening sentence - question, sound, action or dialogue."], ["TEE paragraph", "Topic sentence, Evidence, Explanation."], ["Formal register", "Respectful official language - I am writing to request..."], ["Informal register", "Relaxed everyday language - Howzit! Write back soon!"], ["C.O.P.S.", "Proofreading checklist: Capitals, Order, Punctuation, Spelling."]];</script>
@@ -170,6 +189,7 @@ function renderMCQ(box,items){
         btns.forEach(function(bb,bi){bb.disabled=true;if(bi===it.a)bb.classList.add('correct');});
         if(oi!==it.a){b.classList.add('wrong');}else{right++;}
         done++;why.classList.add('show');
+        if(done===items.length&&window.Track){Track.logWidget(window.DECKKEY||'--','quiz',right,items.length);}
         score.textContent='Score: '+right+' / '+done+' answered ('+items.length+' in total)';
       });
       q.appendChild(b);
@@ -193,7 +213,7 @@ function renderMCQ(box,items){
 
 function renderMatch(box,data){
   var info=document.createElement('p');info.className='score';
-  var total=data.pairs.length,matched=0;
+  var total=data.pairs.length,matched=0,wrong=0;
   info.textContent='Matched 0 / '+total;
   var grid=document.createElement('div');grid.className='matchgrid';
   var left=document.createElement('div'),right=document.createElement('div');
@@ -205,9 +225,11 @@ function renderMatch(box,data){
       selL.btn.classList.add('done');selR.btn.classList.add('done');
       selL.btn.disabled=true;selR.btn.disabled=true;
       matched++;info.textContent='Matched '+matched+' / '+total+(matched===total?' - all matched!':'');
+      if(matched===total&&window.Track){Track.logWidget(window.DECKKEY||'--','match',total,total+wrong);}
       selL=null;selR=null;
     }else{
       var l=selL.btn,r=selR.btn;
+      wrong++;
       l.classList.add('bad');r.classList.add('bad');
       setTimeout(function(){l.classList.remove('bad','sel');r.classList.remove('bad','sel');},350);
       selL=null;selR=null;
@@ -229,7 +251,7 @@ function renderMatch(box,data){
 
 function renderClassify(box,data){
   var info=document.createElement('p');info.className='score';
-  var total=data.items.length,done=0,right=0;
+  var total=data.items.length,done=0,right=0,wrong=0;
   info.textContent='Sorted 0 / '+total;
   var itemsRow=document.createElement('div');itemsRow.className='chips';
   var bucketsRow=document.createElement('div');bucketsRow.className='buckets';
@@ -244,10 +266,12 @@ function renderClassify(box,data){
         b.disabled=true;b.classList.remove('sel');b.classList.add('placed');
         d.querySelector('.blist').appendChild(b);
         right++;done++;
+        if(done===total&&window.Track){Track.logWidget(window.DECKKEY||'--','sort',right,total+wrong);}
         info.textContent='Sorted '+done+' / '+total+(done===total?' - all correct: '+right+' / '+total:'');
         sel=null;
       }else{
         b.classList.add('bad');
+        wrong++;
         setTimeout(function(){b.classList.remove('bad');},350);
       }
     });
@@ -271,7 +295,7 @@ function renderClassify(box,data){
 
 function renderFill(box,items){
   var info=document.createElement('p');info.className='score';
-  var right=0;
+  var right=0,wrong=0;
   items.forEach(function(it){
     var q=document.createElement('div');q.className='qbox';
     var parts=it.prompt.split('___');
@@ -286,8 +310,9 @@ function renderFill(box,items){
       var v=inp.value.trim().toLowerCase();
       if(!v)return;
       var good=it.answers.toLowerCase().split('|').some(function(ans){return ans.trim()===v;});
-      if(good){locked=true;right++;inp.classList.add('fbok');inp.disabled=true;b.disabled=true;}
-      else{inp.classList.add('fbno');setTimeout(function(){inp.classList.remove('fbno');},900);}
+      if(good){locked=true;right++;inp.classList.add('fbok');inp.disabled=true;b.disabled=true;
+        if(right===items.length&&window.Track){Track.logWidget(window.DECKKEY||'--','fill',items.length,items.length+wrong);}}
+      else{inp.classList.add('fbno');wrong++;setTimeout(function(){inp.classList.remove('fbno');},900);}
       why.innerHTML='<b>Answer:</b> '+esc(it.answers.split('|')[0])+' &nbsp;&middot;&nbsp; <b>Why:</b> '+esc(it.why);
       why.classList.add('show');
       info.textContent='Correct: '+right+' / '+items.length;
@@ -330,6 +355,173 @@ function shuffleCards(){
   window.CARDS=shuffle(window.CARDS.slice());
   buildCards();
 }
+</script><script>
+var Track=(function(){
+  var KEY='g7english.track.v2';
+  var TOPICS=[
+    {n:'Comprehension',d:'01',f:'01-Comprehension.html'},
+    {n:'Literature',d:'02',f:'02-Literature-Elements.html'},
+    {n:'Figures of Speech',d:'03',f:'03-Figurative-Speech.html'},
+    {n:'Nouns, Pronouns & Articles',d:'04',f:'04-Parts-of-Speech.html'},
+    {n:'Adjectives & Word Meaning',d:'05',f:'05-Adjectives-Word-Meaning.html'},
+    {n:'Sentences, Punctuation & Verbs',d:'06',f:'06-Sentences-Punctuation-Verbs.html'},
+    {n:'Poetry',d:'07',f:'07-Poetry-Skills.html'},
+    {n:'Visual Texts',d:'08',f:'08-Visual-Texts.html'},
+    {n:'Summary Writing',d:'09',f:'09-Summary-Writing.html'},
+    {n:'Essay Writing',d:'10',f:'10-Essay-Writing.html'},
+    {n:'Transactional Writing',d:'11',f:'11-Transactional-Writing.html'},
+    {n:'Exam Technique & Oral',d:'12',f:'12-Oral-Exam-Technique.html'}
+  ];
+  function blank(){return {v:2,active:'',profiles:{}};}
+  function blankProfile(){return {sessions:[],sprint:{}};}
+  function store(){try{return window.localStorage||null;}catch(e){return null;}}
+  function load(){
+    var s=store();if(!s)return blank();
+    try{
+      var d=JSON.parse(s.getItem(KEY)||'null');
+      if(!d||typeof d!=='object'||!d.profiles)d=blank();
+      d.profiles=d.profiles||{};d.active=d.active||'';
+      return d;
+    }catch(e){return blank();}
+  }
+  function save(d){var s=store();if(s){try{s.setItem(KEY,JSON.stringify(d));}catch(e){}}}
+  function ensure(d){if(!d.active)d.active='Learner';if(!d.profiles[d.active])d.profiles[d.active]=blankProfile();return d.profiles[d.active];}
+  function profileNames(){var d=load();return Object.keys(d.profiles);}
+  function activeName(){return load().active;}
+  function setActive(n){var d=load();if(d.profiles[n]){d.active=n;save(d);}}
+  function setName(n){
+    n=String(n||'').replace(/^\s+|\s+$/g,'').slice(0,40);
+    if(!n)return;
+    var d=load(),cur=d.active;
+    if(cur===n){save(d);return;}
+    var curP=cur?d.profiles[cur]:null;
+    if(curP&&!d.profiles[n]){d.profiles[n]=curP;delete d.profiles[cur];}
+    else if(!d.profiles[n]){d.profiles[n]=blankProfile();}
+    d.active=n;save(d);
+  }
+  function activeProfile(){var d=load();return d.profiles[d.active]||blankProfile();}
+  function log(rec){rec.t=rec.t||Date.now();var d=load();ensure(d).sessions.push(rec);save(d);return rec;}
+  function logTrainer(o){return log({a:'trainer',sel:o.sel||'All categories',s:o.score||0,n:o.total||0,c:o.cats||{}});}
+  function logWidget(k,w,s,n){return log({a:'widget',k:k,w:w,s:s||0,n:n||0});}
+  function logMock(s){return log({a:'manual',lbl:'Mock Paper 2',s:s,n:60});}
+  function logManual(lbl,s,n){return log({a:'manual',lbl:lbl||'Practice',s:(s===undefined?null:s),n:(n===undefined?null:n)});}
+  function sprint(day,on){var d=load();var p=ensure(d);if(on){p.sprint[day]=Date.now();}else{delete p.sprint[day];}save(d);}
+  function clear(){var s=store();if(s){try{s.removeItem(KEY);}catch(e){}}}
+  function sessionKey(s){return [s.a,s.t,s.k||'',s.sel||'',s.lbl||'',s.s||'',s.n||''].join('|');}
+  function mergeProfile(cur,inc){
+    cur=cur||blankProfile();inc=inc||{};
+    var seen={};cur.sessions.forEach(function(s){seen[sessionKey(s)]=1;});
+    (inc.sessions||[]).forEach(function(s){var k=sessionKey(s);if(!seen[k]){seen[k]=1;cur.sessions.push(s);}});
+    cur.sessions.sort(function(a,b){return (a.t||0)-(b.t||0);});
+    var sp=inc.sprint||{};Object.keys(sp).forEach(function(day){if(!cur.sprint[day]||cur.sprint[day]<sp[day])cur.sprint[day]=sp[day];});
+    return cur;
+  }
+  function report(){var d=load();var p=d.profiles[d.active]||blankProfile();
+    return {v:2,learner:d.active,sessions:p.sessions.slice(),sprint:p.sprint};}
+  function importReport(inc){
+    var d=load();var name=String((inc&&inc.learner)||d.active||'Learner').slice(0,40);
+    if(!d.profiles[name])d.profiles[name]=blankProfile();
+    d.profiles[name]=mergeProfile(d.profiles[name],inc);
+    if(!d.active)d.active=name;
+    save(d);return name;
+  }
+  function enc(d){var j=JSON.stringify(d);var b=btoa(unescape(encodeURIComponent(j)));
+    return b.replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+  function dec(code){
+    code=String(code||'').replace(/^\s+|\s+$/g,'').replace(/-/g,'+').replace(/_/g,'/');
+    while(code.length%4)code+='=';
+    return JSON.parse(decodeURIComponent(escape(atob(code))));
+  }
+  function topicStats(p){
+    p=p||blankProfile();
+    var map={};var byName={};
+    TOPICS.forEach(function(t){var o={n:t.n,d:t.d,f:t.f,att:0,cor:0};map[t.d]=o;byName[t.n]=o;});
+    (p.sessions||[]).forEach(function(s){
+      if(s.a==='trainer'&&s.c){
+        Object.keys(s.c).forEach(function(c){
+          var t=byName[c];if(!t)return;
+          t.att+=s.c[c][0]||0;t.cor+=s.c[c][1]||0;
+        });
+      }
+      if(s.a==='widget'&&s.k){
+        var t=map[s.k];if(t&&s.n){t.att+=s.n;t.cor+=(s.s||0);}
+      }
+    });
+    var arr=TOPICS.map(function(t){return map[t.d];});
+    arr.forEach(function(t){t.acc=t.att?Math.round(100*t.cor/t.att):null;});
+    return arr;
+  }
+  function focus(p){
+    var ts=topicStats(p);
+    return {
+      all:ts,
+      weak:ts.filter(function(t){return t.att>0&&t.acc<60;}).sort(function(a,b){return a.acc-b.acc;}),
+      mid:ts.filter(function(t){return t.att>0&&t.acc>=60&&t.acc<75;}).sort(function(a,b){return a.acc-b.acc;}),
+      strong:ts.filter(function(t){return t.att>0&&t.acc>=75;}).sort(function(a,b){return b.acc-a.acc;}),
+      none:ts.filter(function(t){return !t.att;})
+    };
+  }
+  function dayKey(t){var dd=new Date(t);return dd.getFullYear()+'-'+(dd.getMonth()+1)+'-'+dd.getDate();}
+  function activityDays(p){
+    var set={};
+    ((p&&p.sessions)||[]).forEach(function(s){set[dayKey(s.t)]=1;});
+    var sp=(p&&p.sprint)||{};Object.keys(sp).forEach(function(k){set[dayKey(sp[k])]=1;});
+    return set;
+  }
+  function activeDays(p){return Object.keys(activityDays(p)).length;}
+  function lastActive(p){
+    var m=0;((p&&p.sessions)||[]).forEach(function(s){if(s.t>m)m=s.t;});
+    var sp=(p&&p.sprint)||{};Object.keys(sp).forEach(function(k){if(sp[k]>m)m=sp[k];});
+    return m||null;
+  }
+  function streak(p){
+    var set=activityDays(p);var n=0;var cur=new Date();
+    if(!set[dayKey(cur.getTime())])cur=new Date(cur.getTime()-86400000);
+    while(set[dayKey(cur.getTime())]){n++;cur=new Date(cur.getTime()-86400000);}
+    return n;
+  }
+  function trainerAcc(p){
+    var att=0,cor=0;((p&&p.sessions)||[]).forEach(function(s){
+      if(s.a==='trainer'){att+=s.n||0;cor+=s.s||0;}});
+    return att?Math.round(100*cor/att):null;
+  }
+  function copyText(t){
+    try{
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t);return true;}
+    }catch(e){}
+    try{
+      var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);
+      ta.select();document.execCommand('copy');document.body.removeChild(ta);return true;
+    }catch(e2){return false;}
+  }
+  function fmtDate(t){
+    if(!t)return '-';
+    try{return new Date(t).toLocaleDateString('en-ZA',{day:'2-digit',month:'short',year:'numeric'});}
+    catch(e){return '-';}
+  }
+  function onReady(fn){
+    if(typeof document==='undefined')return;
+    if(document.readyState!=='loading'){fn();}else{document.addEventListener('DOMContentLoaded',fn);}
+  }
+  onReady(function(){
+    try{
+      var d=load();
+      document.querySelectorAll('input[data-day]').forEach(function(el){
+        if(d.profiles[d.active]&&d.profiles[d.active].sprint[el.getAttribute('data-day')]){el.checked=true;}
+      });
+    }catch(e){}
+  });
+  return {
+    blank:blank,load:load,save:save,profiles:profileNames,activeName:activeName,
+    setActive:setActive,setName:setName,activeProfile:activeProfile,
+    log:log,logTrainer:logTrainer,logWidget:logWidget,logMock:logMock,logManual:logManual,
+    sprint:sprint,clear:clear,sessionKey:sessionKey,mergeProfile:mergeProfile,
+    report:report,importReport:importReport,enc:enc,dec:dec,
+    topicStats:topicStats,focus:focus,activeDays:activeDays,lastActive:lastActive,
+    streak:streak,trainerAcc:trainerAcc,copyText:copyText,fmtDate:fmtDate,onReady:onReady,
+    TOPICS:TOPICS
+  };
+})();
 </script>
 <script>
 var tState={pool:[],idx:0,score:0,answered:false,missed:[]};
@@ -344,8 +536,8 @@ function startTrainer(){
   var cat=document.getElementById('catSel').value;
   var count=parseInt(document.getElementById('countSel').value,10);
   var pool;
-  if(cat==='__all'){pool=[];Object.keys(window.BANK).forEach(function(k){pool=pool.concat(window.BANK[k]);});}
-  else{pool=window.BANK[cat].slice();}
+  if(cat==='__all'){pool=[];Object.keys(window.BANK).forEach(function(k){window.BANK[k].forEach(function(it){var c=Object.assign({},it);c._cat=k;pool.push(c);});});}
+  else{pool=window.BANK[cat].map(function(it){var c=Object.assign({},it);c._cat=cat;return c;});}
   pool=shuffle(pool);
   if(count>0&&count<pool.length){pool=pool.slice(0,count);}
   tState={pool:pool,idx:0,score:0,answered:false,missed:[]};
@@ -390,6 +582,13 @@ function finish(){
     tState.missed.forEach(function(m){h+='<li><b>'+esc(m.q)+'</b><br>Correct answer: <b>'+esc(m.opts[m.a])+'</b> - '+esc(m.why)+'</li>';});
     h+='</ul>';
   }
+  var cats={};tState.pool.forEach(function(it){var c=it._cat||'Other';cats[c]=cats[c]||[0,0];cats[c][0]++;if(tState.missed.indexOf(it)===-1){cats[c][1]++;}});
+  var selEl=document.getElementById('catSel');
+  var selLabel=selEl?selEl.options[selEl.selectedIndex].text.split(' (')[0]:'All categories';
+  if(window.Track){Track.logTrainer({score:tState.score,total:tState.pool.length,sel:selLabel,cats:cats});}
+  var focusNames=Object.keys(cats).filter(function(c){return cats[c][0]>=2&&(100*cats[c][1]/cats[c][0])<75;}).sort(function(a,b){return (cats[a][1]/cats[a][0])-(cats[b][1]/cats[b][0]);});
+  h+='<p>Saved to your <a href="tracker.html">progress tracker</a>.</p>';
+  if(focusNames.length){h+='<p><b>Focus next:</b> '+focusNames.slice(0,3).join(', ')+'. Redo these in the trainer, then in the module notes and practice.</p>';}
   h+='<button type="button" class="rbtn" onclick="restartTrainer()">New quiz</button></div>';
   document.getElementById('quizArea').innerHTML=h;
 }
