@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Module 8: Visual Texts - Grade 7 English Prep</title>
+<style>
+:root{--paper:#FBF4E9;--card:#FFFFFF;--ink:#2B2118;--muted:#7A6A58;--line:#EFE3CE;--wine3:#3B0E1C;--wine:#5A1626;--wine2:#7C2233;--gold:#C08A2D;--gold2:#E7C46A;--teal:#1F6F6B;--teal2:#EAF6F4;--red:#B3261E;--green:#4C7A1F;--cream:#FFF9EF;--radius:14px;--display:Georgia,'Times New Roman',serif;--body:'Segoe UI',Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}::selection{background:#E7C46A;color:#3B0E1C}
+body{font-family:var(--body);margin:0;background:var(--paper);color:var(--ink);line-height:1.65}
+header.hero{background:linear-gradient(180deg,#2A0A13 0%,#3B0E1C 45%,#5A1626 100%);color:#fff;padding:52px 24px 64px;text-align:center;position:relative;overflow:hidden}
+header.hero::before{content:'';position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(231,196,106,.28),transparent 65%);pointer-events:none}
+header.hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1.5px,transparent 1.5px);background-size:22px 22px;pointer-events:none}
+header.hero .lesson-chip{position:relative;z-index:1;display:inline-block;background:var(--gold2);color:#3B0E1C;font-weight:800;font-size:12.5px;letter-spacing:1.5px;padding:5px 16px;border-radius:999px;margin-bottom:10px}
+header.hero .day{position:relative;z-index:1;display:inline-block;background:rgba(231,196,106,.14);border:1px solid rgba(231,196,106,.55);padding:5px 16px;border-radius:999px;font-size:13.5px;margin-bottom:10px;margin-left:8px}
+header.hero h1{position:relative;z-index:1;margin:12px 0 6px;font-size:2.1em;letter-spacing:-.5px;font-family:var(--display);text-shadow:0 2px 12px rgba(0,0,0,.35)}
+header.hero p{position:relative;z-index:1;opacity:.93;margin:4px 0}
+main{max-width:960px;margin:-30px auto 48px;background:var(--card);border-radius:var(--radius);box-shadow:0 20px 60px rgba(59,14,28,.22);padding:30px 30px 34px;overflow:hidden}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0}
+.card.objectives{background:#FDF6E7;border-color:var(--gold2);border-left:6px solid var(--gold)}
+.card.keywords{background:var(--cream);border-color:var(--line)}
+.card.scenario{background:var(--teal2);border-color:var(--teal);border-left:6px solid var(--teal)}
+.card.errors{background:#FCEAE8;border-color:#E7A9A2;border-left:6px solid var(--red)}
+.card.memo{background:#FCEAE8;border-color:#8C1D18}
+.card.exam{background:#F1EEF9;border-color:#C9BBE8;border-left:6px solid #5B3EA8}
+.tip{background:var(--teal2);border-left:4px solid var(--teal);padding:10px 14px;margin:12px 0;border-radius:0 10px 10px 0}
+.badge{display:inline-block;background:var(--gold2);color:#3B0E1C;font-weight:700;border-radius:999px;padding:3px 12px;font-size:13px;margin:3px}
+.badge.dim{background:var(--muted);color:#fff;font-weight:400}
+.meta{color:var(--muted);font-size:13.5px;margin:2px 0 10px}
+h2{color:var(--wine3);font-family:var(--display);margin-top:36px;font-size:1.5em;border:0}
+h2::after{content:'';display:block;width:64px;height:5px;background:var(--gold);border-radius:3px;margin-top:8px}
+h3{color:var(--wine);margin:18px 0 8px}
+h4{color:var(--teal);margin:14px 0 6px}
+p{margin:10px 0}
+ul,ol{padding-left:22px}li{margin:6px 0}
+a{color:var(--wine2)}
+table{width:100%;border-collapse:collapse;margin:14px 0;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(59,14,28,.08)}
+th{background:linear-gradient(180deg,#3B0E1C,#5A1626);color:#fff;padding:11px;text-align:left}
+td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
+tr:nth-child(even) td{background:#FBF4E9}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;background:#FFFDF7}
+summary{cursor:pointer;font-weight:700;color:var(--wine3)}
+details.reveal{margin:12px 0}
+.teacher-box{background:#F5F0E6;border-style:dashed}
+.teacher-box summary{color:var(--muted)}
+.teacher-box h3{margin-top:16px}
+.memo-banner{background:linear-gradient(90deg,#7B1A1A,#A52A2A);color:#fff;text-align:center;padding:10px;font-weight:700;letter-spacing:.4px;border-radius:8px;margin:8px 0}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:28px 0 6px;flex-wrap:wrap}
+.nav a{background:linear-gradient(180deg,#3B0E1C,#5A1626);color:#fff;text-decoration:none;padding:11px 20px;border-radius:10px;box-shadow:0 4px 12px rgba(59,14,28,.28)}
+.nav a:hover{background:var(--gold);color:#3B0E1C}
+.nav a.hub{background:var(--teal)}
+footer{background:#2A0A13;color:#fff;text-align:center;font-size:13px;padding:22px;margin:0}
+footer::before{content:'';display:block;width:64px;height:4px;background:var(--gold);border-radius:2px;margin:0 auto 12px}
+.illus{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin:16px 0;text-align:center}
+.illus svg{max-width:100%;height:auto}
+.checklist label{display:block;background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer}
+.checklist input{margin-right:8px}
+.modgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.modcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 2px 8px rgba(59,14,28,.07)}
+.modcard a{font-weight:700;text-decoration:none;color:var(--wine3);font-size:16.5px}
+.modcard a:hover{color:var(--gold)}
+.modcard small{color:var(--muted);display:block;margin-top:4px}
+.pill{display:inline-block;background:var(--cream);border:1px solid var(--gold2);color:var(--wine2);border-radius:999px;font-size:11.5px;font-weight:700;padding:2px 10px;margin-bottom:6px}
+/* interactive widgets */
+.card.widget{background:#FFFDF7;border-color:var(--gold2)}
+.hint{color:var(--muted);font-size:13.5px;margin:2px 0 8px}
+.qbox{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;background:#fff}
+.qtext{font-weight:700;margin:4px 0 8px}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;font-size:15px;font-family:inherit;color:var(--ink)}
+.opt:hover{border-color:var(--gold)}
+.opt.correct{background:#EAF5E3;border-color:var(--green);font-weight:700}
+.opt.wrong{background:#FCEAE8;border-color:var(--red);text-decoration:line-through}
+.why{display:none;background:#FDF6E7;border-left:4px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:8px;font-size:14.5px}
+.why.show{display:block}
+.score{font-weight:700;color:var(--wine2);margin:8px 0 2px}
+.rbtn{border:0;border-radius:9px;padding:8px 16px;font-weight:700;font-size:14px;cursor:pointer;background:var(--wine);color:#fff;font-family:inherit;margin:6px 0}
+.rbtn:hover{background:var(--gold);color:#3B0E1C}
+.matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mitem{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;font-size:14.5px;font-family:inherit;color:var(--ink)}
+.mitem:hover{border-color:var(--gold)}
+.mitem.sel{border-color:var(--gold);background:#FDF6E7}
+.mitem.done{background:#EAF5E3;border-color:var(--green);cursor:default}
+.mitem.bad{animation:shake .3s}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chipbtn{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;font-size:14px;font-family:inherit;color:var(--ink)}
+.chipbtn:hover{border-color:var(--gold)}
+.chipbtn.sel{border-color:var(--gold);background:#FDF6E7}
+.chipbtn.placed{background:#EAF5E3;border-color:var(--green);cursor:default}
+.chipbtn.bad{animation:shake .3s;border-color:var(--red)}
+.buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:8px}
+.bucket{border:1.5px dashed var(--gold2);border-radius:12px;padding:10px;background:var(--cream);cursor:pointer;min-height:70px}
+.bucket:hover{border-color:var(--gold)}
+.fbin{width:180px;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;font-size:15px;font-family:inherit}
+.fbok{background:#EAF5E3;border-color:var(--green)}
+.fbno{background:#FCEAE8;border-color:var(--red)}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+/* trainer */
+.tabbtns{display:flex;gap:8px;margin:18px 0}
+.tabbtn{border:1.5px solid var(--wine);background:#fff;color:var(--wine);border-radius:10px;padding:9px 18px;font-weight:700;cursor:pointer;font-family:inherit;font-size:15px}
+.tabbtn.active{background:var(--wine);color:#fff}
+.tab{display:none}.tab.active{display:block}
+.trainerProg{font-weight:700;color:var(--muted);font-size:14px}
+.catgrid{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.flipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:14px 0}
+.flipcard{perspective:900px;cursor:pointer;height:150px}
+.flipcard .inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flipcard.flipped .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-size:14.5px}
+.face.back{transform:rotateY(180deg);background:#FDF6E7;border-color:var(--gold2)}
+.printbtn{background:var(--teal);color:#fff;border:0;border-radius:9px;padding:10px 18px;font-weight:700;cursor:pointer;font-family:inherit;font-size:14.5px;margin:6px 6px 6px 0}
+.printbtn:hover{background:var(--gold);color:#3B0E1C}
+.writeline{border-bottom:1px solid var(--line);height:26px}
+@media(max-width:640px){main{padding:20px 16px}header.hero h1{font-size:1.5em}.matchgrid{grid-template-columns:1fr}}
+@media print{.nav,.rbtn,.tabbtns,.tabbtn,.printbtn,.lesson-chip,.day{display:none}main{box-shadow:none;margin:0;max-width:100%}details{border:1px solid #999}body{background:#fff}}
+</style>
+</head><body>
+<header class='hero'><span class='lesson-chip'>Module 8 of 12</span><span class='day'>Paper 2, Q2 (10 marks)</span><h1>Module 8: Visual Texts</h1><p>Reading &amp; Viewing - cartoons, adverts, posters and graphs.</p></header>
+<main>
+<p class='meta'>Grade 7 &middot; English Home Language (HL) &middot; Term 4 exam revision &middot; 2 x 60 minutes</p>
+<div class='card objectives'><h3>By the end of this module you can:</h3><ul><li>Identify the type, audience and purpose of a visual text.</li><li>Decode speech bubbles, body language, facial expressions, colour and font.</li><li>Explain the persuasive techniques used in adverts and posters.</li><li>Explain a cartoonist's intention.</li><li>Read simple graphs (bar, line, pie) for information.</li></ul></div>
+<section><h2>1. Learner Notes</h2><h3>Step 1 - Type, audience, purpose</h3>
+<table><tr><th>Visual type</th><th>Where you find it</th><th>What it does</th></tr><tr><td>Cartoon</td><td>Newspapers, magazines</td><td>Makes a point about people, events or society - often funny or critical</td></tr><tr><td>Advert</td><td>TV, posters, social media</td><td>Persuades you to buy or do something</td></tr><tr><td>Poster</td><td>Schools, clinics, streets</td><td>Informs or reminds a community</td></tr><tr><td>Graph</td><td>Reports, textbooks, news</td><td>Shows information as numbers and trends</td></tr><tr><td>Infographic</td><td>Websites, magazines</td><td>Explains information quickly with pictures and facts</td></tr></table>
+<h3>Step 2 - Decode the picture</h3>
+<ul><li>Speech bubbles and thought bubbles - what is said, and what is NOT said?</li><li>Facial expressions - happy, worried, angry, surprised?</li><li>Body language - pointing, crossed arms, shrug, thumbs up.</li><li>Colour - red = danger or urgency; green = nature, safe; blue = calm, water.</li><li>Size and position - the biggest thing matters most.</li><li>Font - big bold letters shout; handwriting feels personal.</li><li>Symbols - a heart = love; a rand sign = money; a clock = time.</li></ul>
+<h3>Step 3 - Persuasive techniques</h3>
+<table><tr><th>Technique</th><th>What it looks like</th></tr><tr><td>Slogan</td><td>A short, memorable phrase: 'Every drop counts!'</td></tr><tr><td>Emotive words</td><td>Words that push feelings: cruel, miracle, deadly, cosy</td></tr><tr><td>Repetition</td><td>The same word or sound again and again</td></tr><tr><td>Questions &amp; exclamations</td><td>'Are you still wasting water?' / 'Act now!'</td></tr><tr><td>Statistics</td><td>'Nine out of ten learners recycle.'</td></tr><tr><td>Witnesses or celebrities</td><td>A famous face telling you it works</td></tr><tr><td>Logo &amp; brand colours</td><td>The same symbol and colours everywhere</td></tr><tr><td>Call to action</td><td>An instruction: 'Join today!' 'Buy now!'</td></tr></table>
+<h3>Graphs - read before you answer</h3>
+<ul><li>Title - what the graph is about.</li><li>Axes - what is measured on each side (labels!).</li><li>Key or legend - what each colour or bar means.</li><li>Trend words: increase, decrease, stay the same, highest, lowest, peak.</li></ul>
+<h3>Answer frame</h3>
+<p>The purpose of this visual is to ... The target audience is ... The artist shows this by using ... (technique) and ... (evidence from the picture).</p></section>
+<section><h2>2. Interactive Practice</h2><div id='practice-box'></div></section>
+<section><h2>3. Worked Example</h2><h3>Model: answering a poster question</h3>
+<p><strong>Q: What is the purpose of a clinic poster that says 'Test early, live healthy'? (2)</strong></p>
+<p>A: To persuade people in the community to test for illness early. It uses an emotive promise ('live healthy') and a command (call to action). (2)</p>
+<p><strong>Q: How does the artist make the message urgent? (2)</strong></p>
+<p>A: Strong colours and words like 'early' and 'live' create urgency: early testing is linked to staying alive. (2)</p>
+<h3>What strong answers always do</h3>
+<ul><li>Name the technique (slogan / emotive words / call to action).</li><li>Point to evidence in the visual ('the smiling water drop').</li><li>Explain the effect on the reader ('it makes saving water feel easy and friendly').</li></ul></section>
+<section><h2>4. Worksheet</h2><h3>Visual A - the poster</h3>
+<figure class='illus'><svg viewBox='0 0 560 380' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Save water poster with smiling water drop mascot'><rect x='8' y='8' width='544' height='364' rx='16' fill='#E8F4FA' stroke='#1F6F6B' stroke-width='3'/><text x='280' y='56' text-anchor='middle' font-size='30' font-weight='bold' fill='#0B4F6C'>SAVE WATER!</text><text x='280' y='88' text-anchor='middle' font-size='20' font-weight='bold' fill='#C08A2D'>Every drop counts</text><rect x='60' y='140' width='24' height='70' rx='8' fill='#9AA5B1'/><path d='M60 152 h44 a14 14 0 0 1 14 14 v12' fill='none' stroke='#9AA5B1' stroke-width='12' stroke-linecap='round'/><path d='M134 196 c0 16 11 27 11 27 s11 -11 11 -27 a11 11 0 1 0 -22 0 z' fill='#4FB3D9' stroke='#0B4F6C' stroke-width='2'/><path d='M300 148 c-30 40 -46 62 -46 88 a46 46 0 0 0 92 0 c0 -26 -16 -48 -46 -88 z' fill='#4FB3D9' stroke='#0B4F6C' stroke-width='3'/><circle cx='282' cy='236' r='5' fill='#0B4F6C'/><circle cx='318' cy='236' r='5' fill='#0B4F6C'/><path d='M282 256 q18 14 36 0' fill='none' stroke='#0B4F6C' stroke-width='4' stroke-linecap='round'/><rect x='340' y='118' width='180' height='72' rx='16' fill='#FFFFFF' stroke='#0B4F6C' stroke-width='3'/><path d='M370 190 l-8 26 28 -24 z' fill='#FFFFFF' stroke='#0B4F6C' stroke-width='3'/><text x='430' y='148' text-anchor='middle' font-size='16' font-weight='bold' fill='#0B4F6C'>Turn off the tap</text><text x='430' y='172' text-anchor='middle' font-size='16' font-weight='bold' fill='#0B4F6C'>while you brush!</text><text x='60' y='300' font-size='16' fill='#0B4F6C'>&#10003; Fix leaking taps</text><text x='60' y='326' font-size='16' fill='#0B4F6C'>&#10003; Take shorter showers</text><text x='60' y='352' font-size='16' fill='#0B4F6C'>&#10003; Report burst pipes</text></svg></figure>
+<ol><li>What kind of text is this? (1)</li><li>Who is the target audience? (1)</li><li>What does the slogan 'Every drop counts' mean? (2)</li><li>Name TWO visual clues that help the message. (2)</li><li>The mascot is smiling. What feeling does that create? (2)</li></ol>
+<h3>Visual B - the graph</h3>
+<figure class='illus'><svg viewBox='0 0 520 300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Bar graph of books read by Grade 7 learners per term'><text x='260' y='30' text-anchor='middle' font-size='18' font-weight='bold' fill='#2B2118'>Books read by Grade 7 at Sunnyview</text><line x1='80' y1='250' x2='480' y2='250' stroke='#2B2118' stroke-width='2'/><line x1='80' y1='60' x2='80' y2='250' stroke='#2B2118' stroke-width='2'/><text x='40' y='90' font-size='12' fill='#7A6A58'>50</text><text x='40' y='150' font-size='12' fill='#7A6A58'>30</text><text x='40' y='210' font-size='12' fill='#7A6A58'>10</text><rect x='120' y='200' width='60' height='50' fill='#C08A2D'/><rect x='220' y='162' width='60' height='88' fill='#5A1626'/><rect x='320' y='180' width='60' height='70' fill='#C08A2D'/><rect x='420' y='138' width='60' height='112' fill='#5A1626'/><text x='150' y='272' text-anchor='middle' font-size='14' fill='#2B2118'>Term 1</text><text x='250' y='272' text-anchor='middle' font-size='14' fill='#2B2118'>Term 2</text><text x='350' y='272' text-anchor='middle' font-size='14' fill='#2B2118'>Term 3</text><text x='450' y='272' text-anchor='middle' font-size='14' fill='#2B2118'>Term 4</text></svg></figure>
+<ol><li>In which term did learners read the most books? (1)</li><li>Describe the trend from Term 1 to Term 4. (1)</li></ol>
+<p><em>Total: 10 marks - work on your own, then check the answer key below.</em></p></section>
+<section><h2>5. Memo (Answer Key)</h2><details class='reveal memo-reveal'><summary>Show answer key (click to reveal)</summary><div class='memo-banner'>MEMO - for checking your work, not for copying</div><ol><li>A poster (an advertisement / awareness poster). (1)</li><li>The school community - learners and their families (any reasonable answer). (1)</li><li>Every drop of water saved matters; small savings add up to a lot. (2)</li><li>Any TWO of: the big tap and smiling water-drop mascot; the blue colour; the large 'SAVE WATER!' headline; the speech bubble; the checklist. (2)</li><li>A friendly, hopeful feeling - it makes saving water seem easy and positive, so people want to act. (2)</li></ol>
+<h3>Visual B</h3>
+<ol><li>Term 4. (1)</li><li>It increased overall (rose from Term 1 to Term 4, with a small drop in Term 3). (1)</li></ol></details></section>
+<section><h2>6. Exam-style Question &amp; Memo</h2><p><strong>Paper 2, Q2 style - Visual text (10 marks, about 12 minutes)</strong></p>
+<p>Study the cartoon and answer the questions that follow.</p>
+<figure class='illus'><svg viewBox='0 0 560 400' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Cartoon: a boy shrugs beside an overflowing bin while a girl points at the litter'><rect x='8' y='8' width='544' height='384' rx='16' fill='#FDF6E7' stroke='#C08A2D' stroke-width='3'/><rect x='8' y='330' width='544' height='62' rx='0' fill='#5A1626'/><text x='280' y='358' text-anchor='middle' font-size='16' font-weight='bold' fill='#FFF9EF'>Recycling Week at Riverside Primary</text><text x='280' y='380' text-anchor='middle' font-size='13' fill='#E7C46A'>'It's not my mess!'</text><rect x='360' y='180' width='110' height='130' rx='10' fill='#9AA5B1' stroke='#2B2118' stroke-width='3'/><rect x='350' y='168' width='130' height='18' rx='8' fill='#5A1626'/><rect x='336' y='196' width='26' height='16' fill='#FFFFFF' stroke='#2B2118' transform='rotate(-18 336 196)'/><rect x='470' y='250' width='24' height='16' fill='#FFFFFF' stroke='#2B2118' transform='rotate(14 470 250)'/><rect x='386' y='142' width='18' height='14' fill='#FFFFFF' stroke='#2B2118' transform='rotate(-10 386 142)'/><circle cx='180' cy='186' r='24' fill='#F2C9A0' stroke='#2B2118' stroke-width='3'/><path d='M156 178 q24 -28 48 0' fill='#2B2118'/><line x1='180' y1='210' x2='180' y2='286' stroke='#2B2118' stroke-width='9' stroke-linecap='round'/><line x1='180' y1='226' x2='240' y2='240' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><line x1='180' y1='286' x2='158' y2='318' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><line x1='180' y1='286' x2='204' y2='318' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><circle cx='248' cy='238' r='4' fill='#2B2118'/><circle cx='320' cy='200' r='22' fill='#F2C9A0' stroke='#2B2118' stroke-width='3'/><path d='M298 194 q22 -24 44 0' fill='#2B2118'/><path d='M308 206 q3 6 0 10' fill='none' stroke='#2B2118' stroke-width='2'/><path d='M332 206 q-3 6 0 10' fill='none' stroke='#2B2118' stroke-width='2'/><line x1='320' y1='222' x2='320' y2='290' stroke='#2B2118' stroke-width='9' stroke-linecap='round'/><line x1='320' y1='236' x2='286' y2='216' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><line x1='320' y1='236' x2='352' y2='216' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><line x1='320' y1='290' x2='300' y2='318' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><line x1='320' y1='290' x2='342' y2='318' stroke='#2B2118' stroke-width='8' stroke-linecap='round'/><rect x='250' y='118' width='150' height='64' rx='14' fill='#FFFFFF' stroke='#2B2118' stroke-width='3'/><path d='M290 180 l-6 22 24 -20 z' fill='#FFFFFF' stroke='#2B2118' stroke-width='3'/><text x='325' y='146' text-anchor='middle' font-size='15' font-weight='bold' fill='#2B2118'>It's not my mess!</text><text x='325' y='168' text-anchor='middle' font-size='12' fill='#7A6A58'>- the boy, shrugging</text></svg></figure>
+<ol><li>What is happening in the cartoon? (2)</li><li>What does the speech bubble tell us about the boy's attitude? (2)</li><li>How does the artist show that the bin is overflowing? (2)</li><li>What is the cartoonist's message? (2)</li><li>Do you agree with the boy? Give a reason for your answer. (2)</li></ol>
+<details class='reveal'><summary>Show memo (click to reveal)</summary><ol><li>A girl is pointing at an overflowing bin and scattered litter, while a boy shrugs and refuses to help. (2)</li><li>He is refusing to take responsibility - he thinks the mess is someone else's problem. (2)</li><li>Litter is flying out around the bin (papers on the ground and in the air) and the bin is packed full. (2)</li><li>Everyone must take responsibility for their own waste; recycling starts with each person. (2)</li><li>Open answer with a reason. Accept a supported 'yes' (someone else made the mess) or 'no' (we all share the school). (2)</li></ol></details></section>
+<section><h2>7. Remember this!</h2><div class='card keywords'><p class='hint'>One-glance recap - if a line feels fuzzy, scroll back to the notes.</p><ul><li>Start with three questions: What type is it? Who is it for? What must I do after seeing it?</li><li>Bigger, more central and brighter = more important. Colours and fonts carry feelings.</li><li>Spot the persuasion tools: emotive words, slogans, calls to action.</li><li>Graphs: read the title, labels and units first - then describe the trend.</li></ul></div></section>
+<section><h2>8. Self-check - what I can do</h2><div class='card checklist'><label><input type='checkbox'> Identify the type, audience and purpose of a visual text.</label><label><input type='checkbox'> Decode speech bubbles, body language, facial expressions, colour and font.</label><label><input type='checkbox'> Explain the persuasive techniques used in adverts and posters.</label><label><input type='checkbox'> Explain a cartoonist's intention.</label><label><input type='checkbox'> Read simple graphs (bar, line, pie) for information.</label><label><input type='checkbox'> I can explain each objective above in my own words.</label><label><input type='checkbox'> I can answer the worksheet without help.</label><label><input type='checkbox'> I can spot my own mistakes using the memo.</label></div><div class='tip'><b>Not sure yet?</b> Redo the practice quiz, then try the worksheet again. Tick only what you can do without help.</div></section>
+<details class='reveal teacher-box'><summary>For the teacher - tap to open (learners can skip this)</summary><p class='hint'>Lesson plan, differentiation, exit ticket and homework for this module.</p><h3>Lesson Plan</h3><h3>Learning objectives</h3>
+<ul><li>Identify the type, audience and purpose of a visual text.</li><li>Decode speech bubbles, body language, facial expressions, colour and font.</li><li>Explain the persuasive techniques used in adverts and posters.</li><li>Explain a cartoonist's intention.</li><li>Read simple graphs (bar, line, pie) for information.</li></ul>
+<h3>Prior knowledge</h3>
+<p>Learners have seen comic strips, posters and adverts; they can describe what a picture shows.</p>
+<h3>Resources</h3>
+<p>Learner notes, practice visuals and memos; colour pencils for extension work.</p>
+<h3>Lesson flow (2 x 60 minutes)</h3>
+<ol><li>Session 1: Type, audience, purpose + decoding toolkit, using the water poster.</li><li>Session 1: Persuasive techniques - class spots them in real adverts.</li><li>Session 2: Graphs - parts of a graph and trend words.</li><li>Session 2: Worksheet visual (poster + graph), then the exam-style cartoon under time (12 minutes).</li></ol>
+<h3>Success criteria</h3>
+<p>'I can say what a visual is for, who it targets, and explain two techniques the artist uses to persuade.'</p><h3>Differentiation, Exit Ticket &amp; Homework</h3><h3>Support (scaffolding)</h3>
+<ul><li>Provide the answer frame and a list of question starters.</li><li>Pair learners to talk through the cartoon before writing.</li></ul>
+<h3>Extension</h3>
+<ul><li>Learners design their own poster with one slogan, one emotive word and one call to action.</li></ul>
+<h3>Exit ticket</h3>
+<p>In one sentence each: name one technique in the recycling cartoon and its effect on you.</p>
+<h3>Homework</h3>
+<p>Find any advert at home or in a newspaper. Identify type, audience, purpose and two techniques. Bring it to class.</p></details>
+<div class='nav'><a href='07-Poetry-Skills.html'>&larr; Poetry Skills</a><a href='index.html' class='hub'>Hub</a><a href='09-Summary-Writing.html'>Summary Writing &rarr;</a></div>
+</main>
+<footer>Grade 7 English HL - Exam Prep Pack &middot; Aligned to the DBE CAPS ATP (2023/24, retained for 2025/26) &middot; Works offline</footer>
+<script>var PRACTICE={"mcq": [{"q": "The purpose of an advertisement is to ...", "opts": ["inform and entertain", "persuade you to buy or do something", "tell a story", "summarise a passage"], "a": 1, "why": "Adverts persuade an audience to act."}, {"q": "A slogan is ...", "opts": ["a long description", "a short, memorable phrase", "the artist's signature", "a price tag"], "a": 1, "why": "Slogans are short and catchy: 'Every drop counts!'"}, {"q": "'Buy now! Limited stock!' is an example of ...", "opts": ["a call to action", "a statistic", "a simile", "a definition"], "a": 0, "why": "It tells the reader what to do."}, {"q": "On a graph, the words along the side and bottom are the ...", "opts": ["title", "key", "axis labels", "legend"], "a": 2, "why": "Axis labels tell you what is measured."}, {"q": "Red is often used in a visual text to show ...", "opts": ["calm", "nature", "danger or urgency", "sadness"], "a": 2, "why": "Red = danger, urgency, stop."}, {"q": "A cartoonist who shows a learner throwing litter into a bin with a superhero cape wants to ...", "opts": ["make littering look cool", "praise good behaviour and encourage it", "sell capes", "describe the weather"], "a": 1, "why": "Cartoonists praise or criticise behaviour to make a point."}], "classify": {"instruction": "Sort each example into the persuasive technique it uses.", "cats": ["Slogan", "Statistics", "Call to action", "Repetition", "Emotive words"], "items": [["Every drop counts!", "Slogan"], ["Nine out of ten learners recycle.", "Statistics"], ["Buy now, don't wait!", "Call to action"], ["Caring. Clean. Cool.", "Repetition"], ["Our precious water is being wasted every day.", "Emotive words"], ["Join the Green Team today!", "Call to action"]]}, "fill": [{"prompt": "The ___ audience is the group the advert targets.", "answers": "target", "why": "Target audience = who the advert is aimed at."}, {"prompt": "A ___ graph uses bars to compare amounts.", "answers": "bar", "why": "Bar graphs use bars; line graphs show change over time."}, {"prompt": "The words at the top of a graph form its ___.", "answers": "title", "why": "The title says what the graph is about."}]};</script>
+<script>
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function openAllDetails(){document.querySelectorAll('details').forEach(function(d){d.setAttribute('data-was',d.open?'1':'0');d.open=true;});}
+function closeSavedDetails(){document.querySelectorAll('details').forEach(function(d){if(d.getAttribute('data-was')!=='1')d.open=false;});}
+window.addEventListener('beforeprint',openAllDetails);window.addEventListener('afterprint',closeSavedDetails);
+function revealAll(){document.querySelectorAll('details').forEach(function(d){d.open=true;});}
+function hideAll(){document.querySelectorAll('details').forEach(function(d){d.open=false;});}
+
+function renderMCQ(box,items){
+  var wrap=document.createElement('div');
+  var score=document.createElement('p');score.className='score';
+  var done=0,right=0;
+  items.forEach(function(it,qi){
+    var q=document.createElement('div');q.className='qbox';
+    q.innerHTML='<div class="qtext">'+(qi+1)+'. '+esc(it.q)+'</div>';
+    var why=document.createElement('div');why.className='why';
+    why.innerHTML='<b>Why:</b> '+esc(it.why);
+    it.opts.forEach(function(op,oi){
+      var b=document.createElement('button');b.type='button';b.className='opt';b.textContent=op;
+      b.addEventListener('click',function(){
+        if(q.dataset.done)return;q.dataset.done='1';
+        var btns=q.querySelectorAll('.opt');
+        btns.forEach(function(bb,bi){bb.disabled=true;if(bi===it.a)bb.classList.add('correct');});
+        if(oi!==it.a){b.classList.add('wrong');}else{right++;}
+        done++;why.classList.add('show');
+        score.textContent='Score: '+right+' / '+done+' answered ('+items.length+' in total)';
+      });
+      q.appendChild(b);
+    });
+    q.appendChild(why);wrap.appendChild(q);
+  });
+  function resetAll(){
+    right=0;done=0;
+    wrap.querySelectorAll('.qbox').forEach(function(qb){
+      delete qb.dataset.done;
+      qb.querySelectorAll('.opt').forEach(function(bb){bb.disabled=false;bb.classList.remove('correct','wrong');});
+      qb.querySelector('.why').classList.remove('show');
+    });
+    score.textContent='Score: 0 / 0 answered ('+items.length+' in total)';
+  }
+  score.textContent='Score: 0 / 0 answered ('+items.length+' in total)';
+  var reset=document.createElement('button');reset.type='button';reset.className='rbtn';reset.textContent='Reset quiz';
+  reset.addEventListener('click',resetAll);
+  box.appendChild(wrap);box.appendChild(score);box.appendChild(reset);
+}
+
+function renderMatch(box,data){
+  var info=document.createElement('p');info.className='score';
+  var total=data.pairs.length,matched=0;
+  info.textContent='Matched 0 / '+total;
+  var grid=document.createElement('div');grid.className='matchgrid';
+  var left=document.createElement('div'),right=document.createElement('div');
+  var rights=shuffle(data.pairs.map(function(p,i){return {t:p[1],id:i};}));
+  var selL=null,selR=null;
+  function tryPair(){
+    if(!selL||!selR)return;
+    if(selL.id===selR.id){
+      selL.btn.classList.add('done');selR.btn.classList.add('done');
+      selL.btn.disabled=true;selR.btn.disabled=true;
+      matched++;info.textContent='Matched '+matched+' / '+total+(matched===total?' - all matched!':'');
+      selL=null;selR=null;
+    }else{
+      var l=selL.btn,r=selR.btn;
+      l.classList.add('bad');r.classList.add('bad');
+      setTimeout(function(){l.classList.remove('bad','sel');r.classList.remove('bad','sel');},350);
+      selL=null;selR=null;
+    }
+  }
+  data.pairs.forEach(function(p,i){
+    var b=document.createElement('button');b.type='button';b.className='mitem';b.textContent=p[0];
+    b.addEventListener('click',function(){if(b.disabled)return;if(selL)selL.btn.classList.remove('sel');selL={btn:b,id:i};b.classList.add('sel');tryPair();});
+    left.appendChild(b);
+  });
+  rights.forEach(function(p){
+    var b=document.createElement('button');b.type='button';b.className='mitem';b.textContent=p.t;
+    b.addEventListener('click',function(){if(b.disabled)return;if(selR)selR.btn.classList.remove('sel');selR={btn:b,id:p.id};b.classList.add('sel');tryPair();});
+    right.appendChild(b);
+  });
+  grid.appendChild(left);grid.appendChild(right);
+  box.appendChild(info);box.appendChild(grid);
+}
+
+function renderClassify(box,data){
+  var info=document.createElement('p');info.className='score';
+  var total=data.items.length,done=0,right=0;
+  info.textContent='Sorted 0 / '+total;
+  var itemsRow=document.createElement('div');itemsRow.className='chips';
+  var bucketsRow=document.createElement('div');bucketsRow.className='buckets';
+  var buckets={};var sel=null;
+  data.cats.forEach(function(c){
+    var d=document.createElement('div');d.className='bucket';
+    d.innerHTML='<b>'+esc(c)+'</b><div class="blist"></div>';
+    d.addEventListener('click',function(){
+      if(!sel)return;
+      var b=sel.btn,it=sel.item;
+      if(it.c===c){
+        b.disabled=true;b.classList.remove('sel');b.classList.add('placed');
+        d.querySelector('.blist').appendChild(b);
+        right++;done++;
+        info.textContent='Sorted '+done+' / '+total+(done===total?' - all correct: '+right+' / '+total:'');
+        sel=null;
+      }else{
+        b.classList.add('bad');
+        setTimeout(function(){b.classList.remove('bad');},350);
+      }
+    });
+    bucketsRow.appendChild(d);buckets[c]=d;
+  });
+  shuffle(data.items.map(function(it){return {t:it[0],c:it[1]};})).forEach(function(it){
+    var b=document.createElement('button');b.type='button';b.className='chipbtn';b.textContent=it.t;
+    b.addEventListener('click',function(){
+      if(b.disabled)return;
+      if(sel)sel.btn.classList.remove('sel');
+      sel={btn:b,item:it};
+      b.classList.add('sel');
+    });
+    itemsRow.appendChild(b);
+  });
+  box.appendChild(info);box.appendChild(itemsRow);box.appendChild(bucketsRow);
+  var hint=document.createElement('p');hint.className='hint';
+  hint.textContent='Tap a word chip, then tap the correct bucket.';
+  box.insertBefore(hint,itemsRow);
+}
+
+function renderFill(box,items){
+  var info=document.createElement('p');info.className='score';
+  var right=0;
+  items.forEach(function(it){
+    var q=document.createElement('div');q.className='qbox';
+    var parts=it.prompt.split('___');
+    var line=document.createElement('div');line.className='qtext';
+    line.innerHTML=esc(parts[0])+'<input class="fbin" type="text" aria-label="answer">'+esc(parts[1]||'');
+    var b=document.createElement('button');b.type='button';b.className='rbtn';b.textContent='Check';
+    var why=document.createElement('div');why.className='why';
+    var locked=false;
+    b.addEventListener('click',function(){
+      if(locked)return;
+      var inp=line.querySelector('input');
+      var v=inp.value.trim().toLowerCase();
+      if(!v)return;
+      var good=it.answers.toLowerCase().split('|').some(function(ans){return ans.trim()===v;});
+      if(good){locked=true;right++;inp.classList.add('fbok');inp.disabled=true;b.disabled=true;}
+      else{inp.classList.add('fbno');setTimeout(function(){inp.classList.remove('fbno');},900);}
+      why.innerHTML='<b>Answer:</b> '+esc(it.answers.split('|')[0])+' &nbsp;&middot;&nbsp; <b>Why:</b> '+esc(it.why);
+      why.classList.add('show');
+      info.textContent='Correct: '+right+' / '+items.length;
+    });
+    q.appendChild(line);q.appendChild(b);q.appendChild(why);box.appendChild(q);
+  });
+  info.textContent='Correct: 0 / '+items.length;
+  box.appendChild(info);
+}
+
+function widgetCard(box,title,hintText){
+  var d=document.createElement('div');d.className='card widget';
+  var h=document.createElement('h3');h.textContent=title;d.appendChild(h);
+  if(hintText){var p=document.createElement('p');p.className='hint';p.textContent=hintText;d.appendChild(p);}
+  box.appendChild(d);return d;
+}
+
+function buildPractice(){
+  var p=window.PRACTICE;var box=document.getElementById('practice-box');
+  if(!p||!box)return;
+  if(p.mcq&&p.mcq.length){renderMCQ(widgetCard(box,'Quick-fire quiz','Instant feedback - reset and repeat until every answer is green.'),p.mcq);}
+  if(p.match){renderMatch(widgetCard(box,'Match the pairs',p.match.instruction||''),p.match);}
+  if(p.classify){renderClassify(widgetCard(box,'Sort it out',p.classify.instruction||''),p.classify);}
+  if(p.fill&&p.fill.length){renderFill(widgetCard(box,'Fill in the blanks','Type the missing word(s), then press Check.'),p.fill);}
+}
+
+function buildCards(){
+  var grid=document.getElementById('cards');
+  if(!grid||!window.CARDS)return;
+  grid.innerHTML='';
+  window.CARDS.forEach(function(c){
+    var d=document.createElement('div');d.className='flipcard';
+    d.innerHTML='<div class="inner"><div class="face front"><b>'+esc(c[0])+'</b></div><div class="face back">'+esc(c[1])+'</div></div>';
+    d.addEventListener('click',function(){d.classList.toggle('flipped');});
+    grid.appendChild(d);
+  });
+}
+function shuffleCards(){
+  if(!window.CARDS)return;
+  window.CARDS=shuffle(window.CARDS.slice());
+  buildCards();
+}
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){buildPractice();});</script>
+</body></html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Module 11: Transactional Writing - Grade 7 English Prep</title>
+<style>
+:root{--paper:#FBF4E9;--card:#FFFFFF;--ink:#2B2118;--muted:#7A6A58;--line:#EFE3CE;--wine3:#3B0E1C;--wine:#5A1626;--wine2:#7C2233;--gold:#C08A2D;--gold2:#E7C46A;--teal:#1F6F6B;--teal2:#EAF6F4;--red:#B3261E;--green:#4C7A1F;--cream:#FFF9EF;--radius:14px;--display:Georgia,'Times New Roman',serif;--body:'Segoe UI',Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}::selection{background:#E7C46A;color:#3B0E1C}
+body{font-family:var(--body);margin:0;background:var(--paper);color:var(--ink);line-height:1.65}
+header.hero{background:linear-gradient(180deg,#2A0A13 0%,#3B0E1C 45%,#5A1626 100%);color:#fff;padding:52px 24px 64px;text-align:center;position:relative;overflow:hidden}
+header.hero::before{content:'';position:absolute;top:-120px;right:-100px;width:420px;height:420px;background:radial-gradient(circle,rgba(231,196,106,.28),transparent 65%);pointer-events:none}
+header.hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1.5px,transparent 1.5px);background-size:22px 22px;pointer-events:none}
+header.hero .lesson-chip{position:relative;z-index:1;display:inline-block;background:var(--gold2);color:#3B0E1C;font-weight:800;font-size:12.5px;letter-spacing:1.5px;padding:5px 16px;border-radius:999px;margin-bottom:10px}
+header.hero .day{position:relative;z-index:1;display:inline-block;background:rgba(231,196,106,.14);border:1px solid rgba(231,196,106,.55);padding:5px 16px;border-radius:999px;font-size:13.5px;margin-bottom:10px;margin-left:8px}
+header.hero h1{position:relative;z-index:1;margin:12px 0 6px;font-size:2.1em;letter-spacing:-.5px;font-family:var(--display);text-shadow:0 2px 12px rgba(0,0,0,.35)}
+header.hero p{position:relative;z-index:1;opacity:.93;margin:4px 0}
+main{max-width:960px;margin:-30px auto 48px;background:var(--card);border-radius:var(--radius);box-shadow:0 20px 60px rgba(59,14,28,.22);padding:30px 30px 34px;overflow:hidden}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:18px 0}
+.card.objectives{background:#FDF6E7;border-color:var(--gold2);border-left:6px solid var(--gold)}
+.card.keywords{background:var(--cream);border-color:var(--line)}
+.card.scenario{background:var(--teal2);border-color:var(--teal);border-left:6px solid var(--teal)}
+.card.errors{background:#FCEAE8;border-color:#E7A9A2;border-left:6px solid var(--red)}
+.card.memo{background:#FCEAE8;border-color:#8C1D18}
+.card.exam{background:#F1EEF9;border-color:#C9BBE8;border-left:6px solid #5B3EA8}
+.tip{background:var(--teal2);border-left:4px solid var(--teal);padding:10px 14px;margin:12px 0;border-radius:0 10px 10px 0}
+.badge{display:inline-block;background:var(--gold2);color:#3B0E1C;font-weight:700;border-radius:999px;padding:3px 12px;font-size:13px;margin:3px}
+.badge.dim{background:var(--muted);color:#fff;font-weight:400}
+.meta{color:var(--muted);font-size:13.5px;margin:2px 0 10px}
+h2{color:var(--wine3);font-family:var(--display);margin-top:36px;font-size:1.5em;border:0}
+h2::after{content:'';display:block;width:64px;height:5px;background:var(--gold);border-radius:3px;margin-top:8px}
+h3{color:var(--wine);margin:18px 0 8px}
+h4{color:var(--teal);margin:14px 0 6px}
+p{margin:10px 0}
+ul,ol{padding-left:22px}li{margin:6px 0}
+a{color:var(--wine2)}
+table{width:100%;border-collapse:collapse;margin:14px 0;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(59,14,28,.08)}
+th{background:linear-gradient(180deg,#3B0E1C,#5A1626);color:#fff;padding:11px;text-align:left}
+td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
+tr:nth-child(even) td{background:#FBF4E9}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;background:#FFFDF7}
+summary{cursor:pointer;font-weight:700;color:var(--wine3)}
+details.reveal{margin:12px 0}
+.teacher-box{background:#F5F0E6;border-style:dashed}
+.teacher-box summary{color:var(--muted)}
+.teacher-box h3{margin-top:16px}
+.memo-banner{background:linear-gradient(90deg,#7B1A1A,#A52A2A);color:#fff;text-align:center;padding:10px;font-weight:700;letter-spacing:.4px;border-radius:8px;margin:8px 0}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:28px 0 6px;flex-wrap:wrap}
+.nav a{background:linear-gradient(180deg,#3B0E1C,#5A1626);color:#fff;text-decoration:none;padding:11px 20px;border-radius:10px;box-shadow:0 4px 12px rgba(59,14,28,.28)}
+.nav a:hover{background:var(--gold);color:#3B0E1C}
+.nav a.hub{background:var(--teal)}
+footer{background:#2A0A13;color:#fff;text-align:center;font-size:13px;padding:22px;margin:0}
+footer::before{content:'';display:block;width:64px;height:4px;background:var(--gold);border-radius:2px;margin:0 auto 12px}
+.illus{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin:16px 0;text-align:center}
+.illus svg{max-width:100%;height:auto}
+.checklist label{display:block;background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer}
+.checklist input{margin-right:8px}
+.modgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.modcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:0 2px 8px rgba(59,14,28,.07)}
+.modcard a{font-weight:700;text-decoration:none;color:var(--wine3);font-size:16.5px}
+.modcard a:hover{color:var(--gold)}
+.modcard small{color:var(--muted);display:block;margin-top:4px}
+.pill{display:inline-block;background:var(--cream);border:1px solid var(--gold2);color:var(--wine2);border-radius:999px;font-size:11.5px;font-weight:700;padding:2px 10px;margin-bottom:6px}
+/* interactive widgets */
+.card.widget{background:#FFFDF7;border-color:var(--gold2)}
+.hint{color:var(--muted);font-size:13.5px;margin:2px 0 8px}
+.qbox{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;background:#fff}
+.qtext{font-weight:700;margin:4px 0 8px}
+.opt{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;font-size:15px;font-family:inherit;color:var(--ink)}
+.opt:hover{border-color:var(--gold)}
+.opt.correct{background:#EAF5E3;border-color:var(--green);font-weight:700}
+.opt.wrong{background:#FCEAE8;border-color:var(--red);text-decoration:line-through}
+.why{display:none;background:#FDF6E7;border-left:4px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:8px;font-size:14.5px}
+.why.show{display:block}
+.score{font-weight:700;color:var(--wine2);margin:8px 0 2px}
+.rbtn{border:0;border-radius:9px;padding:8px 16px;font-weight:700;font-size:14px;cursor:pointer;background:var(--wine);color:#fff;font-family:inherit;margin:6px 0}
+.rbtn:hover{background:var(--gold);color:#3B0E1C}
+.matchgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mitem{display:block;width:100%;text-align:left;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:9px 12px;margin:6px 0;cursor:pointer;font-size:14.5px;font-family:inherit;color:var(--ink)}
+.mitem:hover{border-color:var(--gold)}
+.mitem.sel{border-color:var(--gold);background:#FDF6E7}
+.mitem.done{background:#EAF5E3;border-color:var(--green);cursor:default}
+.mitem.bad{animation:shake .3s}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chipbtn{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;font-size:14px;font-family:inherit;color:var(--ink)}
+.chipbtn:hover{border-color:var(--gold)}
+.chipbtn.sel{border-color:var(--gold);background:#FDF6E7}
+.chipbtn.placed{background:#EAF5E3;border-color:var(--green);cursor:default}
+.chipbtn.bad{animation:shake .3s;border-color:var(--red)}
+.buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:8px}
+.bucket{border:1.5px dashed var(--gold2);border-radius:12px;padding:10px;background:var(--cream);cursor:pointer;min-height:70px}
+.bucket:hover{border-color:var(--gold)}
+.fbin{width:180px;border:1.5px solid var(--line);border-radius:8px;padding:6px 10px;font-size:15px;font-family:inherit}
+.fbok{background:#EAF5E3;border-color:var(--green)}
+.fbno{background:#FCEAE8;border-color:var(--red)}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+/* trainer */
+.tabbtns{display:flex;gap:8px;margin:18px 0}
+.tabbtn{border:1.5px solid var(--wine);background:#fff;color:var(--wine);border-radius:10px;padding:9px 18px;font-weight:700;cursor:pointer;font-family:inherit;font-size:15px}
+.tabbtn.active{background:var(--wine);color:#fff}
+.tab{display:none}.tab.active{display:block}
+.trainerProg{font-weight:700;color:var(--muted);font-size:14px}
+.catgrid{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.flipgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:14px 0}
+.flipcard{perspective:900px;cursor:pointer;height:150px}
+.flipcard .inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flipcard.flipped .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-size:14.5px}
+.face.back{transform:rotateY(180deg);background:#FDF6E7;border-color:var(--gold2)}
+.printbtn{background:var(--teal);color:#fff;border:0;border-radius:9px;padding:10px 18px;font-weight:700;cursor:pointer;font-family:inherit;font-size:14.5px;margin:6px 6px 6px 0}
+.printbtn:hover{background:var(--gold);color:#3B0E1C}
+.writeline{border-bottom:1px solid var(--line);height:26px}
+@media(max-width:640px){main{padding:20px 16px}header.hero h1{font-size:1.5em}.matchgrid{grid-template-columns:1fr}}
+@media print{.nav,.rbtn,.tabbtns,.tabbtn,.printbtn,.lesson-chip,.day{display:none}main{box-shadow:none;margin:0;max-width:100%}details{border:1px solid #999}body{background:#fff}}
+</style>
+</head><body>
+<header class='hero'><span class='lesson-chip'>Module 11 of 12</span><span class='day'>Paper 3 (2 short or 1 long text)</span><h1>Module 11: Transactional Writing</h1><p>Writing &amp; Presenting - formal and informal everyday texts with the right format and register.</p></header>
+<main>
+<p class='meta'>Grade 7 &middot; English Home Language (HL) &middot; Term 4 exam revision &middot; 2 x 60 minutes</p>
+<div class='card objectives'><h3>By the end of this module you can:</h3><ul><li>Match the purpose, audience and register of a transactional text.</li><li>Use the correct format for letters, emails, diary entries, reviews, instructions, adverts, notices and minutes.</li><li>Write 2 short or 1 long transactional text under time.</li><li>Proofread with the C.O.P.S. checklist.</li></ul></div>
+<section><h2>1. Learner Notes</h2><h3>Purpose, audience, register</h3>
+<table><tr><th>Ask yourself</th><th>Examples</th></tr><tr><td>Who am I writing to?</td><td>Principal (formal) / my friend (informal) / readers of the school newsletter</td></tr><tr><td>What do I want to happen?</td><td>Persuade, apologise, invite, inform, complain, thank</td></tr><tr><td>Formal or informal?</td><td>Formal: staff, businesses, officials. Informal: diary, close friends and family</td></tr></table>
+<h3>Format cards - the must-haves</h3>
+<table><tr><th>Text type</th><th>Must-haves</th></tr><tr><td>Formal letter</td><td>Your address, date, recipient's title/address, 'Dear Sir/Madam' (or Dear Mr/Ms + surname), clear paragraphs, 'Yours faithfully' (Sir/Madam) or 'Yours sincerely' (name), your signature and name</td></tr><tr><td>Email</td><td>To:, Subject: (short and clear), greeting, short paragraphs, sign-off (Kind regards / Yours sincerely), your name</td></tr><tr><td>Diary entry</td><td>Date, 'Dear Diary', first person, feelings and personal tone, sign-off by first name</td></tr><tr><td>Book review / letter to author</td><td>Title and author, what it is about (no spoilers), your opinion with reasons, who should read it / a rating</td></tr><tr><td>Instructions</td><td>Title, materials/ingredients list, numbered steps in order, imperative verbs (mix, cut, pour), warnings (careful!)</td></tr><tr><td>Advertisement / poster</td><td>Bold headline or slogan, descriptive + persuasive words, price/contact details, a call to action, visuals</td></tr><tr><td>Notice</td><td>The word NOTICE or a clear heading, date, time, place, who it concerns, contact person, signature</td></tr><tr><td>Agenda and minutes</td><td>Agenda: date/venue, apologies, numbered items with times. Minutes: items discussed, decisions, action points and who is responsible</td></tr></table>
+<h3>Friendly letter / message (informal)</h3>
+<p>Greeting (Hi Jason), chatty body in paragraphs, feeling words, sign-off (Cheers / Love / Your friend) + first name.</p>
+<h3>Formal vs informal phrases</h3>
+<table><tr><th>Formal</th><th>Informal</th></tr><tr><td>I am writing to request...</td><td>Can I get...?</td></tr><tr><td>I would appreciate your reply.</td><td>Write back soon!</td></tr><tr><td>Yours faithfully</td><td>Cheers</td></tr><tr><td>Kind regards</td><td>Love</td></tr></table>
+<h3>C.O.P.S. proofreading</h3>
+<ul><li>Capitals - names, days, start of sentences, 'Dear'.</li><li>Order - do the parts follow the format? Right order of steps?</li><li>Punctuation - full stops, commas in lists, apostrophes.</li><li>Spelling - check the words you often miss (there/their, your/you're).</li></ul></section>
+<section><h2>2. Interactive Practice</h2><div id='practice-box'></div></section>
+<section><h2>3. Worked Example</h2><h3>Model email (annotated)</h3>
+<p>[To:] mrndlovu@sunnyviewprimary.edu.za</p>
+<p>[Subject:] Request for permission to hold a recycling drive</p>
+<p>Dear Mr Ndlovu</p>
+<p>[Paragraph 1 - who I am and why I write] I am the secretary of the Grade 7 Recycling Club. I am writing to ask for permission to hold a recycling drive at school next Friday.</p>
+<p>[Paragraph 2 - details] With your approval, members will collect paper, tins and plastic bottles during second break. We will store everything in the hall until the collection company arrives at 14:00.</p>
+<p>[Paragraph 3 - polite close] I would appreciate your reply before Wednesday so that we can prepare posters. Thank you for considering our request.</p>
+<p>Kind regards</p>
+<p>Sam Mokoena (Grade 7B)</p>
+<h3>Why it works</h3>
+<ul><li>Subject line is short and clear.</li><li>Three short paragraphs: reason, details, polite close.</li><li>Formal register [in plain words: the level of language you choose - formal or informal]: 'I am writing to ask', 'I would appreciate'.</li><li>Correct sign-off and full name.</li></ul></section>
+<section><h2>4. Worksheet</h2><h3>Choose ONE option</h3>
+<p><strong>Task A - 2 short texts (do both)</strong></p>
+<ol><li>Write a NOTICE for the school noticeboard inviting learners to the recycling drive next Friday. (10)</li><li>Write ONE diary entry about the day of the recycling drive - your feelings before and after. (10)</li></ol>
+<p><strong>Task B - 1 long text (choose one)</strong></p>
+<ol><li>Write a formal letter to the principal about the broken taps in the school bathrooms, asking for them to be fixed. (20)</li><li>Write a book review of a book you have read this year for the school newsletter. (20)</li></ol>
+<h3>Before you start</h3>
+<ul><li>Underline the purpose, audience and format you will use.</li><li>Plan: what must appear in every paragraph?</li><li>Leave 3 minutes to proofread with C.O.P.S.</li></ul></section>
+<section><h2>5. Memo (Answer Key)</h2><details class='reveal memo-reveal'><summary>Show answer key (click to reveal)</summary><div class='memo-banner'>MEMO - for checking your work, not for copying</div><h3>Task A - Notice checklist</h3>
+<ul><li>Heading/NOTICE with the event name.</li><li>Date, time and place (Friday, second break, school hall).</li><li>Who it concerns (all learners).</li><li>What to bring / what happens.</li><li>Contact person and signature.</li></ul>
+<h3>Task A - Diary entry checklist</h3>
+<ul><li>Date + 'Dear Diary'.</li><li>First person, informal, personal tone.</li><li>Feelings before and after the event (nervous, proud).</li><li>Sign-off with first name.</li></ul>
+<h3>Task B - Formal letter model skeleton</h3>
+<p>Your address; date; The Principal, Sunnyview Primary; Dear Mr/Ms [surname]; Para 1: who I am + reason (broken taps in the bathrooms); Para 2: the problem in detail (water wasting, no washing hands, learners slipping); Para 3: request action politely (please arrange a plumber this week); Yours faithfully/sincerely; signature; full name.</p>
+<h3>Task B - Book review skeleton</h3>
+<p>Title and author; what the book is about (main character and problem, no ending spoiler); what I liked and why (with one example); one small criticism; rating out of 5 and who should read it.</p>
+<h3>Marking guide</h3>
+<ul><li>Format: 5 marks (all must-haves present and in the right order).</li><li>Content: 5 marks (clear purpose, complete details).</li><li>Register/language: 5 marks (right tone, correct sentences).</li><li>Spelling and punctuation: 5 marks.</li><li>Total per long text: 20 (short tasks: use half of each category).</li></ul></details></section>
+<section><h2>6. Exam-style Question &amp; Memo</h2><p><strong>Paper 3 style - Transactional writing (2 short or 1 long)</strong></p>
+<p>Prompts: (a) Write an email to your favourite author telling them how their book changed your reading life. (b) Write instructions for preparing a healthy lunchbox. (c) Write a notice about lost property at school. (d) Write a formal letter to the municipality about litter in the park.</p>
+<p>Time: about 30 minutes for 2 short texts, or 45 minutes for 1 long text. Proofread with C.O.P.S.</p>
+<details class='reveal'><summary>Show memo (marking notes) (click to reveal)</summary><ul><li>(a) Email: To/Subject, greeting, praise + one example from the book, polite sign-off. Register: friendly but respectful.</li><li>(b) Instructions: title, materials, numbered imperative steps in order, one warning. Register: clear and direct.</li><li>(c) Notice: heading, what was lost, where and when, where to collect, contact, signature.</li><li>(d) Formal letter: addresses, date, 'Dear Sir/Madam', problem + impact + request, 'Yours faithfully', signature.</li><li>Award format marks first: a beautiful text in the wrong format loses marks before content is even read.</li></ul></details></section>
+<section><h2>7. Remember this!</h2><div class='card keywords'><p class='hint'>One-glance recap - if a line feels fuzzy, scroll back to the notes.</p><ul><li>Format first - a wrong format loses marks before your content is even read.</li><li>Purpose and audience decide the register: formal for officials, friendly for friends.</li><li>Formal = no slang and full sentences. Friendly = warm but still polite.</li><li>Marks are shared: format, content and language all count.</li></ul></div></section>
+<section><h2>8. Self-check - what I can do</h2><div class='card checklist'><label><input type='checkbox'> Match the purpose, audience and register of a transactional text.</label><label><input type='checkbox'> Use the correct format for letters, emails, diary entries, reviews, instructions, adverts, notices and minutes.</label><label><input type='checkbox'> Write 2 short or 1 long transactional text under time.</label><label><input type='checkbox'> Proofread with the C.O.P.S. checklist.</label><label><input type='checkbox'> I can explain each objective above in my own words.</label><label><input type='checkbox'> I can answer the worksheet without help.</label><label><input type='checkbox'> I can spot my own mistakes using the memo.</label></div><div class='tip'><b>Not sure yet?</b> Redo the practice quiz, then try the worksheet again. Tick only what you can do without help.</div></section>
+<details class='reveal teacher-box'><summary>For the teacher - tap to open (learners can skip this)</summary><p class='hint'>Lesson plan, differentiation, exit ticket and homework for this module.</p><h3>Lesson Plan</h3><h3>Learning objectives</h3>
+<ul><li>Match the purpose, audience and register of a transactional text.</li><li>Use the correct format for letters, emails, diary entries, reviews, instructions, adverts, notices and minutes.</li><li>Write 2 short or 1 long transactional text under time.</li><li>Proofread with the C.O.P.S. checklist.</li></ul>
+<h3>Prior knowledge</h3>
+<p>Learners have written friendly letters and messages; they know the difference between formal and informal tone.</p>
+<h3>Resources</h3>
+<p>Format cards (notes), model email, worksheet tasks and memo/rubric.</p>
+<h3>Lesson flow (2 x 60 minutes)</h3>
+<ol><li>Session 1: Purpose, audience, register + format cards; class 'spot the format error'.</li><li>Session 1: Model email annotated; formal vs informal phrase sorting.</li><li>Session 2: Worksheet - Task A (2 short) or Task B (1 long) under time (30 minutes).</li><li>Session 2: Peer marking with the rubric; debrief on top three errors.</li></ol>
+<h3>Success criteria</h3>
+<p>'I can name the must-haves of each format, choose the right register, and write the task in the time given.'</p><h3>Differentiation, Exit Ticket &amp; Homework</h3><h3>Support (scaffolding)</h3>
+<ul><li>Provide printed format skeleton frames with blanks.</li><li>Give the formal/informal phrase table on a card.</li></ul>
+<h3>Extension</h3>
+<ul><li>Learners rewrite an informal email as a formal letter and highlight every register change.</li></ul>
+<h3>Exit ticket</h3>
+<p>Name the must-haves of a notice (heading, date, time, place, who, contact) from memory.</p>
+<h3>Homework</h3>
+<p>Write the transactional text you did NOT attempt in class. Swap with a partner and mark format only using the checklist.</p></details>
+<div class='nav'><a href='10-Essay-Writing.html'>&larr; Essay Writing</a><a href='index.html' class='hub'>Hub</a><a href='12-Oral-Exam-Technique.html'>Oral &amp; Exam Technique &rarr;</a></div>
+</main>
+<footer>Grade 7 English HL - Exam Prep Pack &middot; Aligned to the DBE CAPS ATP (2023/24, retained for 2025/26) &middot; Works offline</footer>
+<script>var PRACTICE={"mcq": [{"q": "Which greeting suits a FORMAL letter?", "opts": ["Hi there!", "Dear Sir/Madam", "Howzit", "Hello friend"], "a": 1, "why": "Formal letters use 'Dear Sir/Madam' or a title and surname."}, {"q": "Which sign-off matches 'Dear Sir/Madam'?", "opts": ["Cheers", "Love", "Yours faithfully", "See you"], "a": 2, "why": "Sir/Madam (no name) pairs with 'Yours faithfully'; a named person pairs with 'Yours sincerely'."}, {"q": "A book review must NOT ...", "opts": ["give your opinion", "spoil the ending", "name the author", "say who should read it"], "a": 1, "why": "No spoilers - describe the problem, not the ending."}, {"q": "Instructions use ... verbs.", "opts": ["imperative (mix, cut, pour)", "past tense (mixed, cut)", "question", "future (will mix)"], "a": 0, "why": "Imperatives tell the reader exactly what to do."}, {"q": "A diary entry uses the ... person and an informal tone.", "opts": ["first", "second", "third", "fourth"], "a": 0, "why": "Diary: 'I felt...', 'Dear Diary' - first person, informal."}, {"q": "In C.O.P.S., the O stands for ...", "opts": ["Opinions", "Order", "Objects", "Openings"], "a": 1, "why": "Capitals, Order (format/sequence), Punctuation, Spelling."}], "classify": {"instruction": "Sort each phrase: FORMAL or INFORMAL?", "cats": ["Formal", "Informal"], "items": [["I am writing to request...", "Formal"], ["Howzit!", "Informal"], ["Yours faithfully", "Formal"], ["Cheers, Sam", "Informal"], ["I would appreciate your reply.", "Formal"], ["Write back soon!", "Informal"], ["Kind regards", "Formal"], ["It was so cool!", "Informal"]]}, "fill": [{"prompt": "An advertisement should end with a call to ___ .", "answers": "action", "why": "Tell the reader what to do: 'Join today!'"}, {"prompt": "In a notice, always include the date, time and ___ .", "answers": "place|venue", "why": "People need to know where to be."}, {"prompt": "Diary entries use the pronoun ___ .", "answers": "i", "why": "First person: I felt, I saw. (Lowercase accepted - the test ignores case.)"}]};</script>
+<script>
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function openAllDetails(){document.querySelectorAll('details').forEach(function(d){d.setAttribute('data-was',d.open?'1':'0');d.open=true;});}
+function closeSavedDetails(){document.querySelectorAll('details').forEach(function(d){if(d.getAttribute('data-was')!=='1')d.open=false;});}
+window.addEventListener('beforeprint',openAllDetails);window.addEventListener('afterprint',closeSavedDetails);
+function revealAll(){document.querySelectorAll('details').forEach(function(d){d.open=true;});}
+function hideAll(){document.querySelectorAll('details').forEach(function(d){d.open=false;});}
+
+function renderMCQ(box,items){
+  var wrap=document.createElement('div');
+  var score=document.createElement('p');score.className='score';
+  var done=0,right=0;
+  items.forEach(function(it,qi){
+    var q=document.createElement('div');q.className='qbox';
+    q.innerHTML='<div class="qtext">'+(qi+1)+'. '+esc(it.q)+'</div>';
+    var why=document.createElement('div');why.className='why';
+    why.innerHTML='<b>Why:</b> '+esc(it.why);
+    it.opts.forEach(function(op,oi){
+      var b=document.createElement('button');b.type='button';b.className='opt';b.textContent=op;
+      b.addEventListener('click',function(){
+        if(q.dataset.done)return;q.dataset.done='1';
+        var btns=q.querySelectorAll('.opt');
+        btns.forEach(function(bb,bi){bb.disabled=true;if(bi===it.a)bb.classList.add('correct');});
+        if(oi!==it.a){b.classList.add('wrong');}else{right++;}
+        done++;why.classList.add('show');
+        score.textContent='Score: '+right+' / '+done+' answered ('+items.length+' in total)';
+      });
+      q.appendChild(b);
+    });
+    q.appendChild(why);wrap.appendChild(q);
+  });
+  function resetAll(){
+    right=0;done=0;
+    wrap.querySelectorAll('.qbox').forEach(function(qb){
+      delete qb.dataset.done;
+      qb.querySelectorAll('.opt').forEach(function(bb){bb.disabled=false;bb.classList.remove('correct','wrong');});
+      qb.querySelector('.why').classList.remove('show');
+    });
+    score.textContent='Score: 0 / 0 answered ('+items.length+' in total)';
+  }
+  score.textContent='Score: 0 / 0 answered ('+items.length+' in total)';
+  var reset=document.createElement('button');reset.type='button';reset.className='rbtn';reset.textContent='Reset quiz';
+  reset.addEventListener('click',resetAll);
+  box.appendChild(wrap);box.appendChild(score);box.appendChild(reset);
+}
+
+function renderMatch(box,data){
+  var info=document.createElement('p');info.className='score';
+  var total=data.pairs.length,matched=0;
+  info.textContent='Matched 0 / '+total;
+  var grid=document.createElement('div');grid.className='matchgrid';
+  var left=document.createElement('div'),right=document.createElement('div');
+  var rights=shuffle(data.pairs.map(function(p,i){return {t:p[1],id:i};}));
+  var selL=null,selR=null;
+  function tryPair(){
+    if(!selL||!selR)return;
+    if(selL.id===selR.id){
+      selL.btn.classList.add('done');selR.btn.classList.add('done');
+      selL.btn.disabled=true;selR.btn.disabled=true;
+      matched++;info.textContent='Matched '+matched+' / '+total+(matched===total?' - all matched!':'');
+      selL=null;selR=null;
+    }else{
+      var l=selL.btn,r=selR.btn;
+      l.classList.add('bad');r.classList.add('bad');
+      setTimeout(function(){l.classList.remove('bad','sel');r.classList.remove('bad','sel');},350);
+      selL=null;selR=null;
+    }
+  }
+  data.pairs.forEach(function(p,i){
+    var b=document.createElement('button');b.type='button';b.className='mitem';b.textContent=p[0];
+    b.addEventListener('click',function(){if(b.disabled)return;if(selL)selL.btn.classList.remove('sel');selL={btn:b,id:i};b.classList.add('sel');tryPair();});
+    left.appendChild(b);
+  });
+  rights.forEach(function(p){
+    var b=document.createElement('button');b.type='button';b.className='mitem';b.textContent=p.t;
+    b.addEventListener('click',function(){if(b.disabled)return;if(selR)selR.btn.classList.remove('sel');selR={btn:b,id:p.id};b.classList.add('sel');tryPair();});
+    right.appendChild(b);
+  });
+  grid.appendChild(left);grid.appendChild(right);
+  box.appendChild(info);box.appendChild(grid);
+}
+
+function renderClassify(box,data){
+  var info=document.createElement('p');info.className='score';
+  var total=data.items.length,done=0,right=0;
+  info.textContent='Sorted 0 / '+total;
+  var itemsRow=document.createElement('div');itemsRow.className='chips';
+  var bucketsRow=document.createElement('div');bucketsRow.className='buckets';
+  var buckets={};var sel=null;
+  data.cats.forEach(function(c){
+    var d=document.createElement('div');d.className='bucket';
+    d.innerHTML='<b>'+esc(c)+'</b><div class="blist"></div>';
+    d.addEventListener('click',function(){
+      if(!sel)return;
+      var b=sel.btn,it=sel.item;
+      if(it.c===c){
+        b.disabled=true;b.classList.remove('sel');b.classList.add('placed');
+        d.querySelector('.blist').appendChild(b);
+        right++;done++;
+        info.textContent='Sorted '+done+' / '+total+(done===total?' - all correct: '+right+' / '+total:'');
+        sel=null;
+      }else{
+        b.classList.add('bad');
+        setTimeout(function(){b.classList.remove('bad');},350);
+      }
+    });
+    bucketsRow.appendChild(d);buckets[c]=d;
+  });
+  shuffle(data.items.map(function(it){return {t:it[0],c:it[1]};})).forEach(function(it){
+    var b=document.createElement('button');b.type='button';b.className='chipbtn';b.textContent=it.t;
+    b.addEventListener('click',function(){
+      if(b.disabled)return;
+      if(sel)sel.btn.classList.remove('sel');
+      sel={btn:b,item:it};
+      b.classList.add('sel');
+    });
+    itemsRow.appendChild(b);
+  });
+  box.appendChild(info);box.appendChild(itemsRow);box.appendChild(bucketsRow);
+  var hint=document.createElement('p');hint.className='hint';
+  hint.textContent='Tap a word chip, then tap the correct bucket.';
+  box.insertBefore(hint,itemsRow);
+}
+
+function renderFill(box,items){
+  var info=document.createElement('p');info.className='score';
+  var right=0;
+  items.forEach(function(it){
+    var q=document.createElement('div');q.className='qbox';
+    var parts=it.prompt.split('___');
+    var line=document.createElement('div');line.className='qtext';
+    line.innerHTML=esc(parts[0])+'<input class="fbin" type="text" aria-label="answer">'+esc(parts[1]||'');
+    var b=document.createElement('button');b.type='button';b.className='rbtn';b.textContent='Check';
+    var why=document.createElement('div');why.className='why';
+    var locked=false;
+    b.addEventListener('click',function(){
+      if(locked)return;
+      var inp=line.querySelector('input');
+      var v=inp.value.trim().toLowerCase();
+      if(!v)return;
+      var good=it.answers.toLowerCase().split('|').some(function(ans){return ans.trim()===v;});
+      if(good){locked=true;right++;inp.classList.add('fbok');inp.disabled=true;b.disabled=true;}
+      else{inp.classList.add('fbno');setTimeout(function(){inp.classList.remove('fbno');},900);}
+      why.innerHTML='<b>Answer:</b> '+esc(it.answers.split('|')[0])+' &nbsp;&middot;&nbsp; <b>Why:</b> '+esc(it.why);
+      why.classList.add('show');
+      info.textContent='Correct: '+right+' / '+items.length;
+    });
+    q.appendChild(line);q.appendChild(b);q.appendChild(why);box.appendChild(q);
+  });
+  info.textContent='Correct: 0 / '+items.length;
+  box.appendChild(info);
+}
+
+function widgetCard(box,title,hintText){
+  var d=document.createElement('div');d.className='card widget';
+  var h=document.createElement('h3');h.textContent=title;d.appendChild(h);
+  if(hintText){var p=document.createElement('p');p.className='hint';p.textContent=hintText;d.appendChild(p);}
+  box.appendChild(d);return d;
+}
+
+function buildPractice(){
+  var p=window.PRACTICE;var box=document.getElementById('practice-box');
+  if(!p||!box)return;
+  if(p.mcq&&p.mcq.length){renderMCQ(widgetCard(box,'Quick-fire quiz','Instant feedback - reset and repeat until every answer is green.'),p.mcq);}
+  if(p.match){renderMatch(widgetCard(box,'Match the pairs',p.match.instruction||''),p.match);}
+  if(p.classify){renderClassify(widgetCard(box,'Sort it out',p.classify.instruction||''),p.classify);}
+  if(p.fill&&p.fill.length){renderFill(widgetCard(box,'Fill in the blanks','Type the missing word(s), then press Check.'),p.fill);}
+}
+
+function buildCards(){
+  var grid=document.getElementById('cards');
+  if(!grid||!window.CARDS)return;
+  grid.innerHTML='';
+  window.CARDS.forEach(function(c){
+    var d=document.createElement('div');d.className='flipcard';
+    d.innerHTML='<div class="inner"><div class="face front"><b>'+esc(c[0])+'</b></div><div class="face back">'+esc(c[1])+'</div></div>';
+    d.addEventListener('click',function(){d.classList.toggle('flipped');});
+    grid.appendChild(d);
+  });
+}
+function shuffleCards(){
+  if(!window.CARDS)return;
+  window.CARDS=shuffle(window.CARDS.slice());
+  buildCards();
+}
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){buildPractice();});</script>
+</body></html>
